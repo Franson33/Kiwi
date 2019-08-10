@@ -2,24 +2,16 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   outline: none;
   color: #373737;
 }
-
-img .wall {
-  display: block;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Candara';
   font-weight: normal;
@@ -27,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 120%;
+  font-size: 130%;
   font-weight: 700;
 }
 
@@ -39,7 +31,7 @@ body {
   background: #white;
 }
 
-header::after, .container::after, footer::after, .widget-category-list li::after {
+header::after, .container::after, footer::after {
   content: "";
   display: table;
   clear: both;
@@ -49,9 +41,8 @@ header::after, .container::after, footer::after, .widget-category-list li::after
   margin: 0 auto;
   width: 100%;
   max-width: 1536px;
-  padding: 0 2%;
+  padding: 0 0%;
 }
-
 
 #menu li:hover a {
   border-top: 2px solid yellowgreen;
@@ -59,19 +50,13 @@ header::after, .container::after, footer::after, .widget-category-list li::after
   border-bottom: 2px solid yellowgreen;
   color: yellowgreen;
 }
-#menu {
-  display: block;
-  width: 100%
-}
-
 #menu li {
   display: block;
   float: left;
+  padding-left: 1%;
   padding-top: 2%;
   padding-right: 5%;
   white-space: nowrap;
-}
-#menu li:last-child {
 }
 #menu.active {
   display: block;
@@ -96,7 +81,6 @@ header::after, .container::after, footer::after, .widget-category-list li::after
 color: yellowgreen;
 border-radius: 2px solid;
 }
-
 .nav-toggle {
   display: none;
   position: absolute;
@@ -104,6 +88,7 @@ border-radius: 2px solid;
   width: 60px;
   height: 60px;
   cursor: pointer;
+  left: 2%;
 }
 .nav-toggle span {
   display: block;
@@ -120,29 +105,20 @@ border-radius: 2px solid;
 .nav-toggle span::after {
   bottom: -10px;
 }
+
 .widget-category-list li {
   float: left;
-  width: 23%;
-  text-align: center;
+  width: 25%;
+  font-size: 140%;
   white-space: nowrap;
-  font-weight: 500;
-  letter-spacing: 0.005em;
-  font-size: 160%;
-  padding-right: 2%;
-}
-.widget {
-  width: 100%;
-  height: 6em;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  border-bottom: 0.3em solid transparent;
+  padding: 1%;
 }
 nav .widget-category-list li:hover {
-  border-bottom: 1em solid yellowgreen;
-  padding-bottom: 1em;
+  border-bottom: 0.3em solid yellowgreen;
 }
-nav a.active .highlight {
-  border-bottom: 1em solid yellowgreen;
-  padding-bottom: 1em;
+.widget-category-list a.active .highlight {
+  border-bottom: 0.3em solid yellowgreen;
 }
 
 .tour-list {
@@ -150,7 +126,6 @@ nav a.active .highlight {
   margin-bottom: 1%;
   width: 100%;
 }
-
 .tour {
   display: block;
   float: left;
@@ -158,49 +133,42 @@ nav a.active .highlight {
   margin-bottom: 1%;
 
 }
-
 .tour-content p {
    line-height: 1.5;
    padding: 1em;
 }
-
 .tour img{
   display: block;
   width: 100%;
   height: 15em;
   margin-bottom: 0px;
 }
-
 .category {
   color: #F8B763;
   text-transform: uppercase;
 }
-
 .tour-title {
-  margin-bottom: 12px;
-  font-size: 1.625em;
+  margin-bottom: 0.75em;
+  font-size: 1.7em;
 }
-
 .tour-footer {
   border-top: 1px solid #EBEBE3;
   border-bottom: 1px solid #EBEBE3;
   position: relative;
-  margin-top: 15px;
+  margin-top: 1em;
 }
-
 .more-link {
   position: relative;
   display: inline-block;
   font-size: 0.625em;
   text-transform: uppercase;
   color: white;
-  line-height: 44px;
-  padding: 0 22px;
+  line-height: 4.4em;
+  padding: 0 2em;
   background: #3C3D41;
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
-
 .more-link::after {
   content: '';
   display: block;
@@ -221,49 +189,87 @@ footer {
   background: #3C3D41;
   color: white;
 }
-
 .footer-col {
   width: 33.33333%
   float: left;
 }
-
 .footer-col a {
   color: white;
 }
-
 .footer-col:last-child {
   text-align: right;
 }
-
 .social-bar-wrap {
   text-align: center;
 }
-
 .social-bar-wrap a {
   padding: 0 0.43em;
   font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
+/*about_us_page*/
+
+.backwall {
+  margin-top: 0.1%;
+  border-top: 2px solid darkolivegreen;
+  font-size: 220%;
+}
+.comp-info {
+  font-size: 120%;
+  margin: 3% 2%;
+}
+.comp-info h3 {
+  border-bottom: 1px solid yellowgreen;
+  text-align: center;
+}
+
+.license {
+  width: 70%;
+  display: block;
+  float: left;
+  position:relative;
+  padding: 2%;
+  font-size: 120%;
+}
+.license h3 {
+  padding-top: 2%;
+}
+.img-lic {
+  width: 30%;
+  height: auto;
+   display: block;
+   float: left;
+   position: relative;
+   padding: 2%;
+ }
+.map {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 30em;
+  border: 2px solid red;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 960px) {
   .nav-toggle {
     display: block;
   }
-  .nav-toggle:hover span {
-    border-top-left-radius: : 5px 3px yellowgreen;
-  }
 
   header{
-    padding-top: 5%;
+    padding-top: 3%;
   }
 
   #menu a {
-    color: yellowgreen;
+    color: #3C3D41;
   }
   #menu {
     max-height: 0;
     position: absolute;
     overflow: hidden;
-    top: 13%;
+    top: 15%;
     right: 100%;
     left: 0;
     margin: 0;
@@ -276,26 +282,32 @@ footer {
     text-align: justify;
     padding: 3%;
     width: 100%;
+    border-top: 2px solid #3C3D41;
   }
   #menu.active {
     display: block;
     font-size: 120%;
-    font-weight: 500;
     white-space: nowrap;
     max-height: 100%;
     width: 70%;
     line-height: 250%;
-    border: 2px solid black;
-    border-radius: 1em;
     background-color: white;
+    border-bottom: 2px solid #3C3D41;
   }
 
   .tel {
-  display: block;
-  position: relative;
-  float: right;
-  margin-bottom: 7%;
+    display: block;
+    position: relative;
+    float: right;
+  }
 
+  .widget-category-list li{
+    display: block;
+    font-size: 140%;
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 1.5%
   }
 
   .tour {
@@ -303,34 +315,27 @@ footer {
     float: left;
     margin-top: 2%;
   }
-  .widget {
-    width: 100%;
-    height: 10em;
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-  .widget-category-list li{
-    display: block;
-    font-size: 160%;
-    width: 50%;
-    float: left;
-    letter-spacing: 0.0005em;
-    text-align: justify;
-    padding: 2%;
-  }
-
   .tour img{
     display: block;
     width: 100%;
     height: 100%;
     margin-bottom: 0px;
   }
+
+  .backwall {
+  font-size: 230%;
+  }
+  .license, .img-lic {
+    width: 100%;
+  }
+
   .mail {
     display: none;
   }
-}
+
 
 @media (max-width: 480px) {
+
   #menu{
     top: 13%;
   }
@@ -340,25 +345,30 @@ footer {
     max-height: 100%;
     max-width: 100%
     min-width: 300px;
-    line-height: 250%;
+    line-height: 200%;
   }
 
   .tel {
-font-size: 70%;
+    font-size: 70%;
   }
 
   .widget-category-list li{
-    display: block;
-    font-size: 120%;
+    font-size: 100%;
     width: 100%;
     float: left;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
   }
+
   .tour-footer {
     border-top: none;
     border-bottom: none;
     text-align: center;
   }
+
+  .about-us {
+    font-size: smaller;
+  }
+
   .post-social {
     position: static;
     text-align: center;
