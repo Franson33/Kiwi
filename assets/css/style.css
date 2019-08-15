@@ -20,11 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.0625em;
 }
 
-h1 {
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
 body {
   font-family: 'Candara', arial, sans-serif;
   font-size: 1em;
@@ -33,7 +28,7 @@ body {
   background: #white;
 }
 
-header::after, .container::after, footer::after {
+header::after, .container::after, footer::after, .tour-list::after {
   content: "";
   display: table;
   clear: both;
@@ -44,6 +39,11 @@ header::after, .container::after, footer::after {
   width: 100%;
   max-width: 2048px;
   padding: 0 0%;
+}
+
+nav {
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 #menu {
@@ -69,10 +69,14 @@ header::after, .container::after, footer::after {
   width: 60%;
   min-width: 300px;
   line-height: 300%;
+  font-size: 1.2em;
+  background-color: white;
+  border-bottom: 2px solid #3C3D41;
+  background: linear-gradient(200deg, rgba(255,255,255,0.95) 45%, rgba(90,165,35,0.95) 100%);
 }
 
 .tel {
-  padding-top: 1.7%;
+  padding-top: 2%;
   position: absolute;
   right: 2%;
 }
@@ -82,18 +86,23 @@ header::after, .container::after, footer::after {
   right: 105%;
   top: 45%;
 }
-.tel a:hover {
-color: yellowgreen;
-border-radius: 2px solid;
+.tel .fa:hover {
+  color: yellowgreen;
 }
+.tel .number:hover {
+  text-decoration: underline;
+  text-decoration-color: yellowgreen;
+}
+
 .nav-toggle {
   display: none;
   position: absolute;
   background-image: url(../img/menu_button_05-01.svg);
-  width: 7.5em;
-  height: 7.5em;
+  width: 6em;
+  height: 6em;
   cursor: pointer;
-  left: 2%;
+  margin-left: 3%;
+  margin-top: 3%;
 }
 .nav-toggle span {
   display: block;
@@ -101,8 +110,8 @@ border-radius: 2px solid;
   font-size: 1.2em;
   font-weight: 700;
   text-align: center;
-  bottom: 18%;
-  right: 24%;
+  bottom: 20%;
+  right: 20%;
 }
 .nav-toggle span::before {
   top: -10px;
@@ -119,72 +128,85 @@ border-radius: 2px solid;
   border-bottom: 0.3em solid transparent;
   padding: 1%;
 }
-nav .widget-category-list li:hover {
+.widget-category-list li:hover {
   border-bottom: 0.3em solid yellowgreen;
 }
 .widget-category-list a.active .highlight {
   border-bottom: 0.3em solid yellowgreen;
 }
 
-.tour-list {
-  display: block;
-  margin-bottom: 1%;
-  width: 100%;
-}
 .tour {
   display: block;
   float: left;
+  position: relative;
   width: 33.33333%;
-  margin-bottom: 1%;
-
+  height: 25vw;
+  margin-bottom: 0;
+  font-size: 0.65em;
 }
-.tour-content p {
-   padding: 2%;
+.tour-content {
+  height: 100%;
 }
-.tour img{
-  display: block;
-  width: 100%;
-  height: 17em;
-  margin-bottom: 0px;
-}
-.category {
-  color: #F8B763;
+.category-link {
+  color: white;
   text-transform: uppercase;
-  padding: 1%;
+  padding: 3%;
+  position: relative;
+  float: right;
 }
 .tour-title {
-  padding: 1%;
-}
-.tour-footer {
-  border-top: 1px solid #EBEBE3;
-  border-bottom: 1px solid #EBEBE3;
-  position: relative;
-  margin-top: 1em;
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+  color: white;
+  padding-top: ;
+  background-color: rgba(75, 75, 50, 0.3);
 }
 .more-link {
-  position: relative;
+  position: absolute;
+  right: 40%;
+  bottom: 15%;
   display: inline-block;
   font-size: 0.7em;
   text-transform: uppercase;
   color: white;
-  line-height: 4.05em;
-  padding: 0 2em;
+  line-height: 4em;
+  padding: 0 3%;
   background: #3C3D41;
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
-.more-link::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
-  right: 0;
-  border: solid transparent;
-  border-width: 2em 1.5em;
-  border-left-color: #3C3D41;
-  transform: translateX(100%);
+
+
+.tour-1 {
+  background-image: url(../img-content/similan_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-2 {
+  background-image: url(../img-content/phi_phi_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-3 {
+  background-image: url(../img-content/james_bond_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-4 {
+  background-image: url(../img-content/amazing_phang_nga_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-5 {
+  background-image: url(../img-content/phuket_fantasea_show_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-6 {
+  background-image: url(../img-content/flying_hanuman_01.jpg);
+  background-size: cover;
+  height: 100%;
 }
 
 footer {
@@ -211,11 +233,25 @@ footer {
   font-size: 1.5em;
 }
 
+/*reviews_page*/
+
+.review {
+  display: block;
+  position: relative;
+  height: 40em;
+  margin: 20%;
+  outline: 1em solid red;
+  text-align: center;
+}
+
 /*about_us_page*/
 
 .backwall {
   margin-top: 0.1%;
   border-top: 2px solid darkolivegreen;
+}
+.blocktxt {
+  font-size: 0.em;
 }
 .comp-info {
   margin-top: 3%;
@@ -265,18 +301,24 @@ footer {
   outline: 2px solid red;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
+
+  .tour {
+    width: 50%;
+    height: 31vw;
+  }
+
+  .blocktxt {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+
   .nav-toggle {
     display: block;
   }
 
-  header{
-    padding-top: 3%;
-  }
-
-  #menu a {
-    color: #3C3D41;
-  }
   #menu {
     max-height: 0;
     position: absolute;
@@ -288,48 +330,39 @@ footer {
     padding: 0;
     z-index: 3;
   }
+  #menu a {
+    color: #3C3D41;
+  }
   #menu li{
     display: block;
     float: left;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     width: 100%;
     border-top: 2px solid #3C3D41;
   }
-  #menu.active {
-    display: block;
-    font-size: 1.3em;
-    white-space: nowrap;
-    max-height: 100%;
-    width: 60%;
-    background-color: white;
-    border-bottom: 2px solid #3C3D41;
-    background: linear-gradient(200deg, rgba(255,255,255,0.95) 45%, rgba(90,165,35,0.95) 100%);
-  }
 
   .tel {
-    display: block;
     position: relative;
     float: right;
-    font-size: 1.2em;
   }
+
   .widget-category-list li{
     display: block;
     width: 50%;
     float: left;
     text-align: left;
-    padding: 1.5%
+    padding: 1.5%;
   }
 
   .tour {
     width: 100%;
-    float: left;
+    height: 65vw;
+    font-size: 1.5em;
   }
-  .tour img{
-    display: block;
+  .tour-content {
     width: 100%;
     height: 100%;
-    margin-bottom: 1%;
   }
 
   .blocktxt {
@@ -346,37 +379,15 @@ footer {
   .mail {
     display: none;
   }
-
+}
 
 @media (max-width: 480px) {
 
-  #menu{
-    top: 17%;
-  }
   #menu.active {
-    display: block;
-    font-size: 90%;
-    max-height: 100%;
-    max-width: 100%
-    min-width: 300px;
-    line-height: 200%;
   }
 
   .tel {
     font-size: 1em;
-  }
-
-  .widget-category-list li{
-    font-size: 100%;
-    width: 100%;
-    float: left;
-    letter-spacing: 0.2em;
-  }
-
-  .tour-footer {
-    border-top: none;
-    border-bottom: none;
-    text-align: center;
   }
 
   .blocktxt {
