@@ -1,0 +1,422 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.html { font-size: 1.5vw; }
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  outline: none;
+  color: #373737;
+}
+
+.body {
+  font-family: 'Candara', arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #373737;
+  background: #white;
+}
+
+.header::after, .container::after, .footer::after, .category::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2048px;
+  padding: 0 0%;
+}
+
+.navigation {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.navigation-menu {
+  transition: .3s ease-in-out;
+}
+.navigation-menu__item-list_item:hover .navigation-menu__item-list_link {
+  border-top: 2px solid yellowgreen;
+  padding-top: 0.05em;
+  border-bottom: 2px solid yellowgreen;
+  color: yellowgreen;
+}
+.navigation-menu__item-list_item {
+  display: block;
+  float: left;
+  padding-left: 1%;
+  padding-top: 2%;
+  padding-right: 5%;
+  white-space: nowrap;
+}
+.navigation-menu.active {
+  display: block;
+  max-height: 100%;
+  width: 70%;
+  min-width: 300px;
+  line-height: 300%;
+  font-size: 1.3em;
+  background-color: white;
+  border-bottom: 2px solid #3C3D41;
+  background: linear-gradient(200deg, rgba(255,255,255,0.95) 45%, rgba(90,165,35,0.95) 100%);
+}
+
+.telephone-widget {
+  padding-top: 2%;
+  position: absolute;
+  right: 2%;
+  font-color: #373737
+}
+.telephone-widget__link .fa-whatsapp {
+  font-size: 1.5em;
+  position: absolute;
+  right: 105%;
+  top: 45%;
+}
+.telephone-widget__link .fa-whatsapp:hover {
+  color: yellowgreen;
+}
+.telephone-widget .telephone-widget__link:hover {
+  text-decoration: underline;
+  text-decoration-color: yellowgreen;
+}
+
+.navigation-menu__menu-toggle {
+  display: none;
+  position: absolute;
+  background-image: url(../img/menu_button_05-01.svg);
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.navigation-menu__menu-toggle_text {
+  display: block;
+  position: absolute;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+  bottom: 13%;
+  right: 16%;
+}
+.navigation-menu__menu-toggle_text::before {
+  top: -10px;
+}
+.navigation-menu__menu-toggle_text::after {
+  bottom: -10px;
+}
+
+.category-widget__category-list_item {
+  float: left;
+  width: 25%;
+  font-size: 1.1em;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 0.3em solid transparent;
+  padding: 1%;
+}
+.category-widget__category-list_item:hover {
+
+}
+/**.category-widget__category-list_link:active .highlight {
+  border-bottom: 0.3em solid yellowgreen;
+}**/
+.category-widget__category-list_item .active {
+  border-bottom: 0.3em solid yellowgreen;
+}
+
+
+.main-wallpaper {
+  display: block;
+  width: 100%;
+}
+
+.tour {
+  display: block;
+  float: left;
+  position: relative;
+  width: 33.33333%;
+  height: 25vw;
+  margin-bottom: 0;
+  font-size: 0.65em;
+  clear: right;
+}
+.tour-content {
+  height: 100%;
+}
+.category-link {
+  color: white;
+  text-transform: uppercase;
+  padding: 2%;
+  position: relative;
+  float: right;
+  font-size: 0.7em;
+}
+.tour-title {
+  width: 50%;
+  padding: 1%;
+  text-align: left;
+  font-size: 0.9em;
+  white-space: nowrap;
+  color: white;
+  background-color: RGBA(60, 61, 65, 0.3);
+}
+.more-link a {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  color: white;
+  padding: 1%;
+  background: RGBA(60, 61, 65, 0.4);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.tour-1 {
+  background-image: url(../img-content/similan_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-2 {
+  background-image: url(../img-content/phi_phi_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-3 {
+  background-image: url(../img-content/james_bond_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-4 {
+  background-image: url(../img-content/amazing_phang_nga_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-5 {
+  background-image: url(../img-content/phuket_fantasea_show_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.tour-6 {
+  background-image: url(../img-content/flying_hanuman_01.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+footer {
+  margin: 0;
+  padding: 3em;
+  background: #3C3D41;
+  color: white;
+}
+.footer-col {
+  width: 33.33333%
+  float: left;
+}
+.footer-col a {
+  color: white;
+}
+.footer-col:last-child {
+  text-align: right;
+}
+.social-bar-wrap {
+  text-align: center;
+}
+.social-bar-wrap a {
+  padding: 0 0.43em;
+  font-size: 1.5em;
+}
+
+/*reviews_page*/
+
+.review {
+  display: block;
+  position: relative;
+  height: 40em;
+  margin: 20%;
+  outline: 1em solid red;
+  text-align: center;
+}
+
+/*about_us_page*/
+
+.backwall {
+  margin-top: 0.1%;
+  border-top: 2px solid darkolivegreen;
+}
+.greenblock__block-title {
+
+}
+.about-us {
+    line-height: 2em;
+    padding: 3%;
+}
+.comp-info {
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 4%;
+  border-bottom: 1px solid yellowgreen;
+  text-align: center;
+  margin-bottom: 4%;
+}
+.comp-adress {
+  margin-top: 4%;
+  padding-bottom: 4%;
+  border-bottom: 1px solid yellowgreen;
+}
+.about-us__adress-thailand {
+  padding: %;
+  font-weight: bold;
+  font-size: 110%;
+}
+.license {
+  margin-top: 4%;
+  padding-bottom: 4%;
+  border-bottom: 1px solid yellowgreen;
+}
+.infoblock {
+  display: inline-block;
+  width: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float:left;
+}
+.img-lic img {
+  float: left;
+  position: relative;
+  padding: 3%;
+ }
+.map {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 5em;
+  outline: 2px solid red;
+}
+
+@media (max-width: 1024px) {
+
+  .tour {
+    width: 50%;
+    height: 31vw;
+  }
+
+  .blocktxt {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navigation-menu__menu-toggle {
+    display: block;
+  }
+
+  .navigation-menu {
+    max-height: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 15%;
+    right: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+  .link .navigation-menu__item-list_link {
+    color: #3C3D41;
+  }
+  .navigation-menu__item-list_item {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    border-top: 2px solid #3C3D41;
+  }
+
+  .telephone-widget {
+    position: relative;
+    float: right;
+  }
+
+  .tour {
+    width: 100%;
+    height: 65vw;
+  }
+  .tour-content {
+    width: 100%;
+    height: 100%;
+  }
+  .tour-title {
+    font-size: 2.5em;
+  }
+  .category-link {
+    font-size: 1.5em;
+  }
+  .more-link {
+    font-size: 3em;
+  }
+
+  .blocktxt {
+    font-size: 1.5em;
+  }
+  .infoblock {
+    width: auto;
+  }
+  .img-lic {
+    float:none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mail {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+.navigation-menu.active {
+  }
+
+  .telephone-widget {
+    font-size: 1em;
+  }
+
+  .blocktxt {
+    font-size: 2em;
+  }
+  .img-lic img {
+    width: 100%;
+  }
+
+  .post-social {
+    position: static;
+    text-align: center;
+    transform: none;
+    margin-top: 1.25em;
+  }
+  .footer-col {
+    float: none;
+    margin-bottom: 1.25em;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-col:last-child {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
