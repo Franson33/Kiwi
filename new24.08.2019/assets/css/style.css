@@ -19,7 +19,7 @@
 .body {
   font-family: 'Candara', arial, sans-serif;
   font-size: 1em;
-  line-height: 1.8em;
+  line-height: 2em;
   color: #373737;
   background: #white;
 }
@@ -87,32 +87,27 @@
   text-decoration: underline;
   text-decoration-color: yellowgreen;
 }
-
 .navigation-menu__menu-toggle {
   display: none;
   position: absolute;
-  background-image: url(../img/menu_button_05-01.svg);
-  width: 5em;
-  height: 5em;
+  height: 4em;
   cursor: pointer;
   margin-left: 3%;
   margin-top: 3%;
 }
 .navigation-menu__menu-toggle_text {
   display: block;
-  position: absolute;
   font-size: 1.1em;
   font-weight: 700;
-  text-align: center;
-  bottom: 13%;
-  right: 16%;
 }
-.navigation-menu__menu-toggle_text::before {
-  top: -10px;
-}
-.navigation-menu__menu-toggle_text::after {
-  bottom: -10px;
-}
+.navigation-menu__menu-toggle:before, .navigation-menu__menu-toggle:after {
+  position: absolute;
+  right: 1%;
+  content: '';
+  width: 3.3em;
+  height: 0.3em;
+  background-color: darkolivegreen;
+  }
 .navigation-menu__close-button{
   display: none;
   width:100%;
@@ -234,6 +229,10 @@
   white-space: nowrap;
 }
 
+.hidden {
+  display: none;
+}
+
 .tour-1 {
   background-image: url(../img-content/similan_01.jpg);
   background-size: cover;
@@ -263,13 +262,6 @@
   background-image: url(../img-content/flying_hanuman_01.jpg);
   background-size: cover;
   height: 100%;
-}
-
-.visible {
-  display: block;
-}
-.hidden {
-  display: none;
 }
 
 footer {
@@ -376,7 +368,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 638px) {
 
   .navigation-menu__menu-toggle {
     display: block;
@@ -412,9 +404,6 @@ footer {
     float: right;
   }
 
-  .category-widget__category-list_item {
-  }
-
   .category-item__tour-item {
     width: 100%;
     height: 65vw;
@@ -426,8 +415,8 @@ footer {
   .tour-title {
     font-size: 2.5em;
   }
-  .category-link {
-    font-size: 1.5em;
+  .link {
+    font-size: 1.3em;
   }
   .more-link {
     font-size: 3em;
@@ -453,5 +442,5 @@ footer {
 @media (max-width: 480px) {
 
  .link {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
