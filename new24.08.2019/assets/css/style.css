@@ -7,6 +7,8 @@
 
 .list {
   list-style: none;
+  font-size: 1em;
+  font-weight: 600;
 }
 .link {
   text-decoration: none;
@@ -22,7 +24,7 @@
   background: #white;
 }
 
-.header::after, .container::after, .footer::after, .category::after {
+.header::after, .container::after, .footer::after, .category-item::after {
   content: "";
   display: table;
   clear: both;
@@ -33,11 +35,6 @@
   width: 100%;
   max-width: 2048px;
   padding: 0 0%;
-}
-
-.navigation {
-  font-size: 1em;
-  font-weight: 600;
 }
 
 .navigation-menu {
@@ -59,14 +56,16 @@
 }
 .navigation-menu.active {
   display: block;
+  position: fixed;
   max-height: 100%;
-  width: 70%;
-  min-width: 300px;
-  line-height: 300%;
-  font-size: 1.3em;
-  background-color: white;
-  border-bottom: 2px solid #3C3D41;
-  background: linear-gradient(200deg, rgba(255,255,255,0.95) 45%, rgba(90,165,35,0.95) 100%);
+  height: 100%;
+  width: 100%;
+  text-decoration-color: white;
+  line-height: 3.5em;
+  font-size: 2.5em;
+  background-color: rgba(105,105,105,0.9);
+  overflow: visible;
+  z-index: 4;
 }
 
 .telephone-widget {
@@ -114,33 +113,85 @@
 .navigation-menu__menu-toggle_text::after {
   bottom: -10px;
 }
-
-.category-widget__category-list_item {
-  float: left;
-  width: 25%;
-  font-size: 1.1em;
-  text-align: center;
-  white-space: nowrap;
-  border-bottom: 0.3em solid transparent;
-  padding: 1%;
+.navigation-menu__close-button{
+  display: none;
+  width:100%;
+  min-height: 60px;
 }
-.category-widget__category-list_item:hover {
-
+.close-button {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  width: 2em;
+  height: 2em;
+  opacity: 0.5;
 }
-/**.category-widget__category-list_link:active .highlight {
-  border-bottom: 0.3em solid yellowgreen;
-}**/
-.category-widget__category-list_item .active {
-  border-bottom: 0.3em solid yellowgreen;
+.close-button:hover {
+  opacity: 1;
 }
-
+.close-button:before, .close-button:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close-button:before {
+  transform: rotate(45deg);
+}
+.close-button:after {
+  transform: rotate(-45deg);
+}
 
 .main-wallpaper {
   display: block;
   width: 100%;
 }
 
-.tour {
+.main {
+  overflow: visible;
+}
+
+.category-widget{
+  min-height: 2.5em;
+  background-color: white;
+  opacity: 0.95;
+}
+.widget-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.category-widget__category-list_item {
+  float: left;
+  width: 25%;
+  border-bottom: 0.3em solid transparent;
+  background-color: white;
+  opacity: 0.95;
+}
+.category-widget__category-list_link {
+  display: inline-block;
+  width:100%;
+  text-align: center;
+  line-height: 2em;
+  padding-right: 5%;
+  margin-top: 0.3em;
+}
+.category-widget__category-list_item:hover {
+  background-color: rgba(105,105,105,0.7);
+  border-bottom: 0.3em solid darkolivegreen;
+}
+.category-widget__category-list_item.active {
+  border-bottom: 0.3em solid yellowgreen;
+}
+
+.category-item {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+.category-item__tour-item {
   display: block;
   float: left;
   position: relative;
@@ -212,6 +263,13 @@
   background-image: url(../img-content/flying_hanuman_01.jpg);
   background-size: cover;
   height: 100%;
+}
+
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
 }
 
 footer {
@@ -308,12 +366,12 @@ footer {
 
 @media (max-width: 1024px) {
 
-  .tour {
+.category-item__tour-item {
     width: 50%;
     height: 31vw;
   }
 
-  .blocktxt {
+.blocktxt {
     font-size: 1em;
   }
 }
@@ -323,20 +381,23 @@ footer {
   .navigation-menu__menu-toggle {
     display: block;
   }
+  .navigation-menu__close-button {
+    display: inline-block;
+  }
 
   .navigation-menu {
     max-height: 0;
     position: absolute;
     overflow: hidden;
-    top: 15%;
+    top: 0;
     right: 100%;
     left: 0;
     margin: 0;
     padding: 0;
     z-index: 3;
   }
-  .link .navigation-menu__item-list_link {
-    color: #3C3D41;
+  .navigation-menu__item-list_link {
+    color: white;
   }
   .navigation-menu__item-list_item {
     display: block;
@@ -344,7 +405,6 @@ footer {
     text-align: center;
     padding: 2%;
     width: 100%;
-    border-top: 2px solid #3C3D41;
   }
 
   .telephone-widget {
@@ -352,7 +412,10 @@ footer {
     float: right;
   }
 
-  .tour {
+  .category-widget__category-list_item {
+  }
+
+  .category-item__tour-item {
     width: 100%;
     height: 65vw;
   }
@@ -389,34 +452,6 @@ footer {
 
 @media (max-width: 480px) {
 
-.navigation-menu.active {
-  }
-
-  .telephone-widget {
-    font-size: 1em;
-  }
-
-  .blocktxt {
-    font-size: 2em;
-  }
-  .img-lic img {
-    width: 100%;
-  }
-
-  .post-social {
-    position: static;
-    text-align: center;
-    transform: none;
-    margin-top: 1.25em;
-  }
-  .footer-col {
-    float: none;
-    margin-bottom: 1.25em;
-    width: 100%;
-    text-align: center;
-  }
-  .footer-col:last-child {
-    text-align: center;
-    margin-bottom: 0;
-  }
+ .link {
+  font-size: 1.2em;
 }
