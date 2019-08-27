@@ -36,7 +36,7 @@
       <main class="main">
         <div class="category-widget widget-sticky">
           <ul class="category-widget__category-list list">
-             <li class="category-widget__category-list_item category-sea"><a id="sea" class="category-widget__category-list_link link" href="index.html#sea">МОРСКИЕ</a></li>
+             <li class="category-widget__category-list_item category-sea active"><a id="sea" class="category-widget__category-list_link link" href="index.html#sea">МОРСКИЕ</a></li>
              <li class="category-widget__category-list_item category-phuket"><a id="phuket" class="category-widget__category-list_link link" href="index.html#phuket">НА ПХУКЕТЕ</a></li>
              <li class="category-widget__category-list_item category-mainland"><a id="mainland" class="category-widget__category-list_link link" href="index.html#mainland">ДЖУНГЛИ</a></li>
              <li class="category-widget__category-list_item category-show"><a id="show" class="category-widget__category-list_link link" href="index.html#show">ВЕЧЕРНИЕ ШОУ</a></li>
@@ -289,8 +289,6 @@
        $('.navigation-menu__menu-toggle').on('click', function(){
         $('.navigation-menu').toggleClass('active');
        });
-      </script>
-      <script type="text/javascript">
        $('.close-button').on('click', function(){
         $('.navigation-menu').removeClass('active');
        });
@@ -326,6 +324,6 @@
         $('.category-item').removeClass('hidden');
         $('.category-item:not(.category-show)').addClass('hidden');
        });
-      </script>
+     </script>
     </body>
 </html>
