@@ -89,32 +89,24 @@
 .navigation-menu__menu-toggle {
   display: none;
   position: relative;
+  width: 10em;
+  height: 4em;
   float:left;
   cursor: pointer;
   margin: 3% 3% 0;
 }
 .navigation-menu__menu-toggle_text {
   display: inline-block;
-  width: 4em;
-  text-align: right;
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: 700;
-  text-align: right;
+  margin-left: 5%;
+  vertical-align: 50%;
 }
-.navigation-menu__menu-toggle_line {
+.navigation-menu__menu-toggle_icon {
   display: inline-block;
-  width: 3em;
-  height: 0.4em;
-  background-color: darkolivegreen;
-  vertical-align: middle;
+  width: 4em;
+  height: 4em;
 }
-.navigation-menu__menu-toggle:before, .navigation-menu__menu-toggle:after {
-  position: absolute;
-  content: '';
-  width: 3em;
-  height: 0.4em;
-  background-color: darkolivegreen;
-  }
 .navigation-menu__close-button{
   display: none;
   width:100%;
