@@ -12,322 +12,338 @@
     </head>
     <body class="body">
       <header class="header container">
-        <nav class="navigation">
+        <nav class="navigation-menu">
             <div class="navigation-menu__menu-toggle">
-              <div class="navigation-menu__menu-toggle_icon">
+              <div class="menu-toggle__icon">
                 <svg class="icon__burger-menu" viewbox="0 0 48 40" preserveAspectRatio="none">
                   <line x1="0" y1="0" x2="48" y2="0" stroke="darkolivegreen" stroke-width="14"/>
                   <line x1="0" y1="20" x2="48" y2="20" stroke="darkolivegreen" stroke-width="7"/>
                   <line x1="0" y1="40" x2="48" y2="40" stroke="darkolivegreen" stroke-width="14"/>
               </svg></div>
-              <span class="navigation-menu__menu-toggle_text">МЕНЮ</span>
+              <span class="menu-toggle__text link">МЕНЮ</span>
             </div>
-            <div class="list navigation-menu">
-              <div class="navigation-menu__close-button"><span class="close-button"></span></div>
-              <ul class="navigation-menu__item-list">
-                <li class="navigation-menu__item-list_item"><a class="link navigation-menu__item-list_link" href="index.html">ГЛАВНАЯ</a></li>
-                <li class="navigation-menu__item-list_item"><a class="link navigation-menu__item-list_link" href="price_list.html">СКАЧАТЬ ПРАЙС</a></li>
-                <li class="navigation-menu__item-list_item"><a class="link navigation-menu__item-list_link" href="reviews.html">ОТЗЫВЫ</a></li>
-                <li class="navigation-menu__item-list_item"><a class="link navigation-menu__item-list_link" href="about_us.html">О НАС/КОНТАКТЫ</a></li>
+            <div class="navigation-menu__menu-items list">
+              <div class="menu-items__close-button"><span class="close-button"></span></div>
+              <ul class="menu-items__item-list">
+                <li class="item-list__item"><a class="item-list__link link" href="index.html">ГЛАВНАЯ</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="price_list.html">СКАЧАТЬ ПРАЙС</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="reviews.html">ОТЗЫВЫ</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="about_us.html">О НАС/КОНТАКТЫ</a></li>
               </ul>
             </div>
-            <div class="telephone-widget list">
-              <a class="link telephone-widget__link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-              <a class="link telephone-widget__link" href="">+66631234567</a>
+            <div class="navigation-menu__telephone-widget list">
+              <a class="telephone-widget__link link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              <a class="telephone-widget__link link" href="">+66631234567</a>
             </div>
-            <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
         </nav>
+        <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
-      <main class="main">
+      <main class="main container">
         <div class="category-widget widget-sticky">
           <ul class="category-widget__category-list list">
-             <li class="category-widget__category-list_item category-sea active"><a id="sea" class="category-widget__category-list_link link" href="index.html#sea">МОРСКИЕ</a></li>
-             <li class="category-widget__category-list_item category-phuket"><a id="phuket" class="category-widget__category-list_link link" href="index.html#phuket">НА ПХУКЕТЕ</a></li>
-             <li class="category-widget__category-list_item category-mainland"><a id="mainland" class="category-widget__category-list_link link" href="index.html#mainland">ДЖУНГЛИ</a></li>
-             <li class="category-widget__category-list_item category-show"><a id="show" class="category-widget__category-list_link link" href="index.html#show">ВЕЧЕРНИЕ ШОУ</a></li>
+             <li class="category-list__item category-sea active">
+               <a id="sea" class="category-list__link link" href="index.html#sea">МОРСКИЕ</a>
+             </li>
+             <li class="category-list__item category-phuket">
+               <a id="phuket" class="category-list__link link" href="index.html#phuket">НА ПХУКЕТЕ</a>
+             </li>
+             <li class="category-list__item category-mainland">
+               <a id="mainland" class="category-list__link link" href="index.html#mainland">ДЖУНГЛИ</a>
+             </li>
+             <li class="category-list__item category-show">
+               <a id="show" class="category-list__link link" href="index.html#show">ВЕЧЕРНИЕ ШОУ</a>
+             </li>
           </ul>
         </div>
-        <div class="category">
-          <div class="category-item category-sea">
-                <div class="category-item__tour-item">
-                    <div class="tour-1">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Симиланские острова</h3></div>
-                        <div class="more-link"><a href="tour_sea_similan_island.html">Посмотреть подробнее</a></div>
+        <div class="tour-category">
+          <div class="tour-category__category-item category-sea">
+                  <div class="category-item__tour-item tour-1">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Симиланские острова</h2></div>
+                        <div class="tour-item__tour-details">
+                            <a class="tour-item__link details-link" href="tour_sea_similan_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-2">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Острова Пхи-Пхи</h3></div>
-                        <div class="more-link"><a href="tour_sea_phi_phi_island.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-2">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Пхи-Пхи</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_phi_phi_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-3">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Острова Джеймса Бонда и каноэ</h3></div>
-                        <div class="more-link"><a href="tour_sea_james_bond_island.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-3">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Джеймса Бонда и каноэ</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_james_bond_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-1">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Симиланские острова</h3></div>
-                        <div class="more-link"><a href="tour_sea_similan_island.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-1">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Симиланские острова</h2></div>
+                        <div class="tour-item__tour-details">
+                            <a class="tour-item__link details-link" href="tour_sea_similan_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-2">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Острова Пхи-Пхи</h3></div>
-                        <div class="more-link"><a href="tour_sea_phi_phi_island.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-2">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Пхи-Пхи</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_phi_phi_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-3">
-                        <div class="tour-content">
-                        <a class="category-link" href="#sea">Морские</a>
-                        <div class="tour-title"><h3>Острова Джеймса Бонда и каноэ</h3></div>
-                        <div class="more-link"><a href="tour_sea_james_bond_island.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-3">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Джеймса Бонда и каноэ</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_james_bond_island.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class="category-item__tour-item tour-1">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Симиланские острова</h2></div>
+                        <div class="tour-item__tour-details">
+                            <a class="tour-item__link details-link" href="tour_sea_similan_island.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
+                  <div class="category-item__tour-item tour-2">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Пхи-Пхи</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_phi_phi_island.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
+                  <div class="category-item__tour-item tour-3">
+                        <a class="tour-item__link" href="#sea">Морские</a>
+                        <div class="tour-item__title"><h2>Острова Джеймса Бонда и каноэ</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_sea_james_bond_island.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
           </div>
-          <div class="category-item category-mainland">
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+          <div class="tour-category__category-item category-mainland">
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-4">
-                        <div class="tour-content">
-                        <a class="category-link" href="#mainland">Джунгли</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
+                  <div class="category-item__tour-item tour-4">
+                        <a class="tour-item__link" href="#mainland">Джунгли</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_mainland_amazing_phang_nga.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
           </div>
-          <div class="category-item category-show">
-                <div class="category-item__tour-item">
-                    <div class="tour-5">
-                        <div class="tour-content">
-                        <a class="category-link" href="#show">Вечерние Шоу</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a></div>
+          <div class="tour-category__category-item category-show">
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-5">
-                        <div class="tour-content">
-                        <a class="category-link" href="#show">Вечерние Шоу</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-5">
-                        <div class="tour-content">
-                        <a class="category-link" href="#show">Вечерние Шоу</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-5">
-                        <div class="tour-content">
-                        <a class="category-link" href="#show">Вечерние Шоу</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-5">
-                        <div class="tour-content">
-                        <a class="category-link" href="#show">Вечерние Шоу</a>
-                        <div class="tour-title"><h3>Удивительная Пханг Нга</h3></div>
-                        <div class="more-link"><a href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-              </div>
-          <div class="category-item category-phuket">
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-5">
+                        <a class="tour-item__link" href="#show">Вечерние Шоу</a>
+                        <div class="tour-item__title"><h2>Удивительная Пханг Нга</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_show_phuket_fantasy.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+          </div>
+          <div class="tour-category__category-item category-phuket">
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
-                <div class="category-item__tour-item">
-                    <div class="tour-6">
-                        <div class="tour-content">
-                        <a class="category-link" href="#phuket">На Пхукете</a>
-                        <div class="tour-title"><h3>Полет Ханумана</h3></div>
-                        <div class="more-link"><a href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a></div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
                         </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class="category-item__tour-item tour-6">
+                        <a class="tour-item__link" href="#phuket">На Пхукете</a>
+                        <div class="tour-item__title"><h2>Полет Ханумана</h2></div>
+                        <div class="tour-item__tour-details">
+                          <a class="tour-item__link details-link" href="tour_phuket_flying_hanuman.html">Посмотреть подробнее</a>
+                        </div>
+                  </div>
           </div>
         </div>
       </main>
       <footer class="footer">
-        <div class="footer__footer-container">
-            <div class="footer-col"><span>Киви Тур © 2019</span></div>
-            <div class="footer-col">
-                <div class="social-bar-wrap">
-                    <a title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a title="Telegram" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
-                </div>
+        <div class="footer-list container">
+            <div class="footer-list__footer-item">
+                <span class="footer-item__copyright">Киви Тур © 2019</span>
             </div>
-            <div class="footer-col">
-                <a href="mailto:igor.shchedrov@gmail.com">Написать нам</a>
-                <i class="mail">:igor.shchedrov@gmail.com</i>
+            <div class="footer-list__footer-item social-bar">
+                <a class="footer-item__link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a class="footer-item__link" title="Telegram" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a class="footer-item__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="footer-list__footer-item">
+                <a class="footer-item__link footer-item__link-mail" href="mailto:igor.shchedrov@gmail.com">Написать нам</a>
+                <p class="footer-item__link-mail text">: igor.shchedrov@gmail.com</p>
             </div>
         </div>
       </footer>
       <script type="text/javascript">
        $('.navigation-menu__menu-toggle').on('click', function(){
-        $('.navigation-menu').toggleClass('active');
+        $('.navigation-menu__menu-items').toggleClass('active');
        });
        $('.close-button').on('click', function(){
-        $('.navigation-menu').removeClass('active');
+        $('.navigation-menu__menu-items').removeClass('active');
        });
       </script>
       <script type="text/javascript">
-       $('#sea.category-widget__category-list_link').on('click', function(){
-        $('.category-widget__category-list_link').parent().removeClass('active');
+       $('#sea.category-list__link').on('click', function(){
+        $('.category-list__link').parent().removeClass('active');
         $(this).parent().addClass('active');
-        $('.category-item').removeClass('hidden');
-        $('.category-item:not(.category-sea)').addClass('hidden');
+        $('.tour-category__category-item').removeClass('hidden');
+        $('.tour-category__category-item:not(.category-sea)').addClass('hidden');
        });
       </script>
       <script type="text/javascript">
-       $('#phuket.category-widget__category-list_link').on('click', function(){
-        $('.category-widget__category-list_link').parent().removeClass('active');
+       $('#phuket.category-list__link').on('click', function(){
+        $('.category-list__link').parent().removeClass('active');
         $(this).parent().addClass('active');
-        $('.category-item').removeClass('hidden');
-        $('.category-item:not(.category-phuket)').addClass('hidden');
+        $('.tour-category__category-item').removeClass('hidden');
+        $('.tour-category__category-item:not(.category-phuket)').addClass('hidden');
        });
       </script>
       <script type="text/javascript">
-       $('#mainland.category-widget__category-list_link').on('click', function(){
-        $('.category-widget__category-list_link').parent().removeClass('active');
+       $('#mainland.category-list__link').on('click', function(){
+        $('.category-list__link').parent().removeClass('active');
         $(this).parent().addClass('active')
-        $('.category-item').removeClass('hidden');
-        $('.category-item:not(.category-mainland)').addClass('hidden');
+        $('.tour-category__category-item').removeClass('hidden');
+        $('.tour-category__category-item:not(.category-mainland)').addClass('hidden');
        });
       </script>
       <script type="text/javascript">
-       $('#show.category-widget__category-list_link').on('click', function(){
-        $('.category-widget__category-list_link').parent().removeClass('active');
+       $('#show.category-list__link').on('click', function(){
+        $('.category-list__link').parent().removeClass('active');
         $(this).parent().addClass('active')
-        $('.category-item').removeClass('hidden');
-        $('.category-item:not(.category-show)').addClass('hidden');
+        $('.tour-category__category-item').removeClass('hidden');
+        $('.tour-category__category-item:not(.category-show)').addClass('hidden');
        });
      </script>
     </body>
