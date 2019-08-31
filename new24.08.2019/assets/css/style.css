@@ -24,7 +24,7 @@
   background-color: white;
 }
 
-.header::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after {
+.header::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after, .category-widget.widget-sticky::after {
   content: "";
   display: table;
   clear: both;
@@ -77,13 +77,13 @@
   margin: 3% 3% 0;
 }
 .menu-toggle__text {
-  display: inline-block;
+  position:absolute;
+  right: 5%;
+  top: 20%;
   font-weight: 700;
-  margin-left: 5%;
-  vertical-align: 50%;
 }
 .menu-toggle__icon {
-  display: inline-block;
+  position: absolute;
   width: 4em;
   height: 4em;
 }
@@ -148,7 +148,7 @@
 
 
 .category-widget{
-  min-height: 2.5em;
+  min-height: 20%;
   background-color: white;
   opacity: 0.95;
 }
@@ -358,6 +358,13 @@
 
 @media (max-width: 1024px) {
 
+  .category-list__item:hover {
+    background: none;
+  }
+  .item-list__item:hover .item-list__link{
+    border: none;
+  }
+
   .category-item__tour-item {
     width: 50%;
     height: 40vw;
@@ -417,9 +424,9 @@
   .tour-item__title{
     font-size: 2.5em;
   }
-  .details-link {
+  .tour-item__link.details-link {
     padding: 2%;
-    font-size: 1.4em;
+    font-size: 1.7em;
   }
   .tour-item__link {
     font-size: 1em;

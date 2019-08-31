@@ -341,7 +341,7 @@
        $('.close-button').on('click', function(){
         $('.navigation-menu__menu-items').removeClass('active');
        });
-      </script>
+      </script>    <!--Открытие/закрытие меню навигации-->
       <script type="text/javascript">
        $('#sea.category-list__link').on('click', function(){
         $('.category-list__link').parent().removeClass('active');
@@ -377,5 +377,8 @@
 
 
       </script>
+      <script type="text/javascript">
+        $('body').on('touchstart', function() {});
+      </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
     </body>
 </html>
