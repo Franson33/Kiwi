@@ -16,10 +16,11 @@
             <div class="navigation-menu__menu-toggle">
               <div class="menu-toggle__icon">
                 <svg class="icon__burger-menu" viewbox="0 0 48 40" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="48" y2="0" stroke="darkolivegreen" stroke-width="14"/>
-                  <line x1="0" y1="20" x2="48" y2="20" stroke="darkolivegreen" stroke-width="7"/>
-                  <line x1="0" y1="40" x2="48" y2="40" stroke="darkolivegreen" stroke-width="14"/>
-              </svg></div>
+                  <line x1="5" y1="4" x2="43" y2="4" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                  <line x1="5" y1="20" x2="43" y2="20" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                  <line x1="5" y1="36" x2="43" y2="36" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+              </div>
               <span class="menu-toggle__text link">МЕНЮ</span>
             </div>
             <div class="navigation-menu__menu-items list">
@@ -35,6 +36,7 @@
               <a class="telephone-widget__link link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
               <a class="telephone-widget__link link" href="">+66631234567</a>
             </div>
+          </div>
         </nav>
         <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
@@ -54,6 +56,16 @@
                <a id="show" class="category-list__link link" href="index.html#show">ВЕЧЕРНИЕ ШОУ</a>
              </li>
           </ul>
+        </div>
+        <div class="main__upwards-button">
+          <div class="upwards-button__icon">
+            <svg class="icon__up-arrow" viewbox="0 0 48 48" preserveAspectRatio="none">
+              <line x1="5" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="24" y1="5" x2="24" y2="43" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="43" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="upwards-button__text">ВВЕРХ</span>
         </div>
         <div class="tour-category">
               <div class="tour-category__category-item category-sea">
@@ -380,5 +392,25 @@
       <script type="text/javascript">
         $('body').on('touchstart', function() {});
       </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.main__upwards-button');
+
+          $ (window).scroll (function () {
+           if ($ (this).scrollTop () > 1000) {
+            $ ('.main__upwards-button').fadeIn();
+           } else {
+            $ ('.main__upwards-button').fadeOut();
+           }
+          });
+
+          $('.main__upwards-button').click(function(){
+           $('bod,html').animate({
+            scrollTop: 0
+            }, 100);
+           return false;
+          });
+        });
+      </script>
     </body>
 </html>

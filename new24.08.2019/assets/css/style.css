@@ -78,7 +78,7 @@
 }
 .menu-toggle__text {
   position:absolute;
-  right: 5%;
+  left: 50%;
   top: 20%;
   font-weight: 700;
 }
@@ -136,6 +136,33 @@
   text-decoration-color: yellowgreen;
 }
 
+.main__upwards-button {
+  display: none;
+  position: fixed;
+  right:5%;
+  bottom: 10%;
+  width: 5em;
+  height: 6.5em;
+  padding: 0.4%;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: RGBA(255, 255, 255, 0.6);
+  cursor: pointer;
+  z-index: 2;
+}
+.upwards-button__icon {
+  position: relative;
+  margin: 0 auto;
+  width: 4em;
+  height: 4em;
+}
+.upwards-button__text {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: darkolivegreen;
+}
+
 .main-wallpaper {
   display: block;
   width: 100%;
@@ -179,7 +206,7 @@
 }
 .category-list__item.active {
   border-bottom: 0.3em solid yellowgreen;
-}
+ }
 
 .hidden {
   display: none;
