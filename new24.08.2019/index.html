@@ -385,9 +385,6 @@
         $('.tour-category__category-item').removeClass('hidden');
         $('.tour-category__category-item:not(.category-show)').addClass('hidden');
        });
-
-
-
       </script>
       <script type="text/javascript">
         $('body').on('touchstart', function() {});
@@ -396,7 +393,7 @@
         $(document).ready(function() {
           $('.main__upwards-button');
 
-          $ (window).scroll (function () {
+          $(window).scroll (function () {
            if ($ (this).scrollTop () > 1000) {
             $ ('.main__upwards-button').fadeIn();
            } else {
@@ -405,11 +402,14 @@
           });
 
           $('.main__upwards-button').click(function(){
-           $('bod,html').animate({
-            scrollTop: 0
-            }, 100);
-           return false;
-          });
+            $('html').animate({
+              scrollTop: 0
+              }, 100);
+            $('body').animate({
+                scrollTop: 0
+              }, 100);  
+            return false;
+            });
         });
       </script>
     </body>
