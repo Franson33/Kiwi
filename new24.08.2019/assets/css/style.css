@@ -141,7 +141,6 @@
   position: fixed;
   right:5%;
   bottom: 10%;
-  width: 5em;
   height: 6.5em;
   padding: 0.4%;
   border: 0.2em solid darkolivegreen;
@@ -268,10 +267,10 @@
   border-radius: 0.1em;
   padding: 0 3%;
 }
-
 .tour-item__background-image:hover {
   transform: scale(1.1);
 }
+
 .tour-1 {
   background-image: url(../img-content/similan_01.jpg);
 }
