@@ -232,15 +232,7 @@
   transition: transform .7s ease;
 }
 .tour-item__link {
-  display: inline-block;
-  position: relative;
-  float: right;
-  padding: 7% 7% 0 0;
-  font-size: 0.5em;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  vertical-align: bottom;
+  cursor: pointer;
 }
 .tour-item__title {
   position: relative;
@@ -249,10 +241,6 @@
   color: white;
   font-size: 0.85em;
   text-shadow: 0px 0px 1px RGBA(255, 255, 255, 1), 2px -1px 0px RGBA(47, 79, 79, 0.8);
-}
-.tour-item__tour-details {
-  display: block;
-  min-height: 90%;
 }
 .details-link {
   position: absolute;
@@ -270,6 +258,39 @@
 }
 .tour-item__background-image:hover {
   transform: scale(1.1);
+}
+
+.tour-item__modal-window {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  top: 100%;
+  position: fixed;
+  left: 0;
+  text-align: left;
+  z-index: 5;
+}
+.modal-window__title {
+  padding: 4%;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.modal-window__content {
+  padding: 4%;
+}
+.modal-window__click-close-modal {
+  display: block;
+  min-height: 60px;
+  z-index: 6;
+}
+.modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
+  background-color: black;
+}
+.category-item__tour-item.modal-opened .tour-item__modal-window {
+  top: 0;
 }
 
 .tour-1 {

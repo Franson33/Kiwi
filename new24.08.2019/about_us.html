@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
     <head>
       <meta charset="utf-8" name="keywords" content="киви, кивитур, экскурсии, пхукет"
        name="description" content="Экскурсионное агенство Киви Тур">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Киви Тур. Информация о компании.</title>
+      <title>Киви Тур, экскурсии на острове Пхукет!</title>
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     </head>
-    <body>
-      <header>
-        <nav class="container">
-            <div class="nav-toggle"><span >МЕНЮ</span></div>
-            <div id="menu">
-              <ul>
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
-                <li><a href="price_list.html">СКАЧАТЬ ПРАЙС</a></li>
-                <li><a href="reviews.html">ОТЗЫВЫ</a></li>
-                <li><a href="about_us.html">О НАС/КОНТАКТЫ</a></li>
+    <body class="body">
+      <header class="header container">
+        <nav class="navigation-menu">
+            <div class="navigation-menu__menu-toggle">
+              <div class="menu-toggle__icon">
+                <svg class="icon__burger-menu" viewbox="0 0 48 40" preserveAspectRatio="none">
+                  <line x1="5" y1="4" x2="43" y2="4" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                  <line x1="5" y1="20" x2="43" y2="20" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                  <line x1="5" y1="36" x2="43" y2="36" stroke="darkolivegreen" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="menu-toggle__text link">МЕНЮ</span>
+            </div>
+            <div class="navigation-menu__menu-items list">
+              <div class="menu-items__close-button"><span class="close-button"></span></div>
+              <ul class="menu-items__item-list">
+                <li class="item-list__item"><a class="item-list__link link" href="index.html">ГЛАВНАЯ</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="price_list.html">СКАЧАТЬ ПРАЙС</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="reviews.html">ОТЗЫВЫ</a></li>
+                <li class="item-list__item"><a class="item-list__link link" href="about_us.html">О НАС/КОНТАКТЫ</a></li>
               </ul>
             </div>
-            <div class="tel">
-              <a title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-              <a class="number" href="">+66631234567</a>
+            <div class="navigation-menu__telephone-widget list">
+              <a class="telephone-widget__link link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              <a class="telephone-widget__link link" href="">+66631234567</a>
             </div>
-            <img class="wall" src="assets\img\kiwi_no_background_03.svg" alt="Логотип компании, вокруг тропический остров">
-            <div class="widget">
-              <ul class="widget-category-list">
-                 <li><a href="index.html#sea">МОРСКИЕ</a></li>
-                 <li><a href="index.html#phuket">НА ПХУКЕТЕ</a></li>
-                 <li><a href="index.html#mainland">ДЖУНГЛИ</a></li>
-                 <li><a href="index.html#show">ВЕЧЕРНИЕ ШОУ</a></li>
-              </ul>
-            </div>
+          </div>
         </nav>
+        <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
-      <main>
+      <main class="main container">
+        <div class="category-widget widget-sticky">
+          <ul class="category-widget__category-list list">
+             <li class="category-list__item category-sea active">
+               <a class="category-list__link link" href="#">МОРСКИЕ</a>
+             </li>
+             <li class="category-list__item category-phuket">
+               <a class="category-list__link link" href="#">НА ПХУКЕТЕ</a>
+             </li>
+             <li class="category-list__item category-mainland">
+               <a class="category-list__link link" href="#">ДЖУНГЛИ</a>
+             </li>
+             <li class="category-list__item category-show">
+               <a class="category-list__link link" href="#">ВЕЧЕРНИЕ ШОУ</a>
+             </li>
+          </ul>
+        </div>
+        <div class="main__upwards-button">
+          <div class="upwards-button__icon">
+            <svg class="icon__up-arrow" viewbox="0 0 48 48" preserveAspectRatio="none">
+              <line x1="5" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="24" y1="5" x2="24" y2="43" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="43" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="upwards-button__text">ВВЕРХ</span>
+        </div>
         <div class="backwall">
           <svg class="greenblock" viewbox="0 0 320 75" preserveAspectRatio="none">
             <polygon points="0,0 320,0 320,75 160,25 0,75" fill="rgb(90, 165, 35)"/>
@@ -48,7 +77,7 @@
           <div class="about-us">
             <div class="comp-info">
                 <p class="about-us__greatings"><h2>Рады видеть вас на нашем сайте!<br>Мы - компания Kiwi Tour.</h2></p>
-                <p>Мы живем на Пхукете с 2012 года, каждый из нас, отдал долгие годы, работе в самых крупных туристических компаниях. Пока однажды не пришло решение, обеденить весь наш опыт и знания и оранизовать эту компанию. Оранизовать, наконец то, весь процес, так как видим его мы, сделать все по человечески, честно и с уважением к нашим гостям! Упростить для вас процесс выбора и покупки поездок, сэкономить драгоценное время на отдыхе и получить максимум положительных эмоций.</p>
+                <p>Мы живем на Пхукете с 2012 года. Каждый из нас, отдал долгие годы работе в самых крупных международных туристических компаниях. Пока однажды не пришло решение, объединить весь наш опыт и знания, и оранизовать собственную компанию. Оранизовать, наконец то, весь процес так как видим его мы, сделать все по человечески, честно и с уважением к нашим гостям! Упростить для вас процесс выбора и покупки поездок, сэкономить драгоценное время на отдыхе и получить максимум положительных эмоций.</p>
                 <p>Рады знакомству и надеемся на дальнейшую долгую дружбу!</p>
             </div>
             <div class="infoblock">
@@ -67,26 +96,77 @@
           </div>
         </div>
       </main>
-      <footer>
-        <div class="container">
-            <div class="footer-col"><span>Киви Тур © 2019</span></div>
-            <div class="footer-col">
-                <div class="social-bar-wrap">
-                    <a title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a title="Telegram" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <a href="mailto:igor.shchedrov@gmail.com">Написать нам</a>
-                <i class="mail">:igor.shchedrov@gmail.com</i>
-            </div>
-        </div>
-      </footer>
-      <script>
-      $('.nav-toggle').on('click', function(){
-      $('#menu').toggleClass('active');
-      });
-      </script>
+      <footer class="footer">
+          <div class="footer-list container">
+              <div class="footer-list__footer-item">
+                  <span class="footer-item__copyright">Киви Тур © 2019</span>
+              </div>
+              <div class="footer-list__footer-item social-bar">
+                  <a class="footer-item__link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                  <a class="footer-item__link" title="Telegram" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                  <a class="footer-item__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+              <div class="footer-list__footer-item">
+                  <a class="footer-item__link footer-item__link-mail" href="mailto:igor.shchedrov@gmail.com">Написать нам</a>
+                  <p class="footer-item__link-mail text">: igor.shchedrov@gmail.com</p>
+              </div>
+          </div>
+        </footer>
+      <script type="text/javascript">
+         $('.navigation-menu__menu-toggle').on('click', function(){
+          $('.navigation-menu__menu-items').toggleClass('active');
+         });
+         $('.close-button').on('click', function(){
+          $('.navigation-menu__menu-items').removeClass('active');
+         });
+        </script>    <!--Открытие/закрытие меню навигации-->
+      <script type="text/javascript">
+          $(document).ready(function() {
+            $('.category-list__link').each(function(i) {
+              $(this).attr('href', '#category' + i);
+            });
+            $('.tour-category__category-item').each(function(i) {
+              $(this).attr('id', 'category' + i);
+            });
+
+            var choosen = $(this).find('.category-list__link').attr('href');
+            $('.tour-category__category-item').removeClass('hidden');
+            $('.tour-category__category-item').not(choosen).addClass('hidden');
+
+            $('.category-widget li').click(function() {
+              $('.category-widget .active').removeClass('active');
+              $(this).addClass('active');
+              var choosen = $(this).find('.category-list__link').attr('href');
+              $('.tour-category__category-item').removeClass('hidden');
+              $('.tour-category__category-item').not(choosen).addClass('hidden');
+            });
+          });
+        </script>   <!--Переключатель категории экскурсий-->
+      <script type="text/javascript">
+          $('body').on('touchstart', function() {});
+        </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
+      <script type="text/javascript">
+          $(document).ready(function() {
+            $('.main__upwards-button');
+
+            $(window).scroll (function () {
+             if ($ (this).scrollTop () > 1000) {
+              $ ('.main__upwards-button').fadeIn();
+             } else {
+              $ ('.main__upwards-button').fadeOut();
+             }
+            });
+
+            $('.main__upwards-button').click(function(){
+              $('html').animate({
+                scrollTop: 0
+                }, 100);
+              $('body').animate({
+                  scrollTop: 0
+                }, 100);
+              return false;
+              });
+          });
+        </script> <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
     </body>
-</html>
+  </html>
