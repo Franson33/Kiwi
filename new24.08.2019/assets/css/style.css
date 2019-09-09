@@ -531,8 +531,8 @@
     right: 5em;
    }
   .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
-    height: 10em;
-    width: 1em;
+    height: 8em;
+    width: 0.8em;
     background-color: white;
   }
 
