@@ -280,10 +280,12 @@
   padding: 4%;
 }
 .modal-content__content {
-  padding: 3%;
-}
+  display: inline-block;
+  padding-bottom: 5%;
+  white-space: pre-line;
+ }
 .modal-content__timing {
-  padding: 3%;
+
 }
 .modal-window__click-close-modal {
   display: block;
@@ -295,6 +297,12 @@
 }
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
+}
+
+.modal-title-1 {
+  background: url("../img-content/similan_03-1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .tour-1 {
@@ -481,6 +489,28 @@
   }
   .tour-item__link {
     font-size: 1em;
+  }
+
+  .modal-window__modal-title {
+    font-size: 2.3em;
+    height: 4.7em;
+    text-align: center;
+  }
+  .modal-title {
+    display: inline-block;
+    margin-top: 1.5em;
+    color: white;
+  }
+  .modal-window__modal-content {
+    font-size: 2em;
+  }
+  .modal-window__click-close-modal.close-button {
+    opacity: 1;
+   }
+  .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
+    height: 4em;
+    width: 0.5em;
+    background-color: white;
   }
 
   .blocktxt {
