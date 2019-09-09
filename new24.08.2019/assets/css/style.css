@@ -301,6 +301,7 @@
   display: block;
   min-height: 60px;
   z-index: 6;
+  cursor: pointer;
 }
 .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
 
@@ -522,10 +523,11 @@
   }
   .modal-window__click-close-modal.close-button {
     opacity: 1;
+    right: 5em;
    }
   .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
-    height: 4em;
-    width: 0.5em;
+    height: 10em;
+    width: 1em;
     background-color: white;
   }
 
