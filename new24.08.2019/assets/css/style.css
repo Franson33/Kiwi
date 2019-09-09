@@ -272,19 +272,29 @@
   z-index: 5;
 }
 .modal-window__modal-title {
-  padding: 4%;
+  padding: 3%;
   border-bottom: 1px solid #ddd;
   position: relative;
+  color: white;
 }
 .modal-window__modal-content {
   padding: 4%;
+  font-size: 0.75em;
 }
 .modal-content__content {
-  display: inline-block;
+  display: block;
+  float: left;
+  width: 50%;
   padding-bottom: 5%;
   white-space: pre-line;
+  text-align: center;
  }
 .modal-content__timing {
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-left: 10%;
 
 }
 .modal-window__click-close-modal {
@@ -293,16 +303,17 @@
   z-index: 6;
 }
 .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
-  background-color: black;
+
 }
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
 }
 
 .modal-title-1 {
-  background: url("../img-content/similan_03-1.jpg") no-repeat;
+  background: url("../img-content/similan_03-1.jpg") no-repeat ;
   background-position: center;
   background-size: cover;
+  opacity: 0.7;
 }
 
 .tour-1 {
@@ -493,16 +504,21 @@
 
   .modal-window__modal-title {
     font-size: 2.3em;
-    height: 4.7em;
+    height: 8em;
     text-align: center;
   }
   .modal-title {
-    display: inline-block;
-    margin-top: 1.5em;
-    color: white;
+    margin-top: 3.5em;
   }
   .modal-window__modal-content {
     font-size: 2em;
+    line-height: 2em;
+  }
+  .modal-content__content {
+    width: 100%;
+  }
+  .modal-content__timing {
+    width: 100%;
   }
   .modal-window__click-close-modal.close-button {
     opacity: 1;
