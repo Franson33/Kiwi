@@ -41,9 +41,7 @@
 }
 .item-list__item:hover .item-list__link {
   border-top: 2px solid yellowgreen;
-  padding-top: 0.05em;
   border-bottom: 2px solid yellowgreen;
-  color: yellowgreen;
 }
 .item-list__item {
   display: block;
@@ -273,13 +271,19 @@
   text-align: left;
   z-index: 5;
 }
-.modal-window__title {
+.modal-window__modal-title {
   padding: 4%;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-.modal-window__content {
+.modal-window__modal-content {
   padding: 4%;
+}
+.modal-content__content {
+  padding: 3%;
+}
+.modal-content__timing {
+  padding: 3%;
 }
 .modal-window__click-close-modal {
   display: block;
