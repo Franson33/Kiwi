@@ -472,6 +472,10 @@
   .menu-items__close-button {
     display: inline-block;
   }
+  .close-button:before, .close-button:after {
+    height: 4em;
+    width: 0.4em;
+  }
   .item-list__link {
     color: white;
   }
@@ -505,11 +509,11 @@
 
   .modal-window__modal-title {
     font-size: 2.3em;
-    height: 8em;
+    height: 11em;
     text-align: center;
   }
   .modal-title {
-    margin-top: 3.5em;
+    margin-top: 5.5em;
   }
   .modal-window__modal-content {
     font-size: 2em;
@@ -520,6 +524,7 @@
   }
   .modal-content__timing {
     width: 100%;
+    padding: 0 0 5% 2%;
   }
   .modal-window__click-close-modal.close-button {
     opacity: 1;
