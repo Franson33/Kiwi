@@ -24,7 +24,7 @@
   background-color: white;
 }
 
-.header::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after, .category-widget.widget-sticky::after {
+.header::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after, .category-widget.widget-sticky::after, .modal-window__modal-content::after {
   content: "";
   display: table;
   clear: both;
@@ -258,6 +258,22 @@
   transform: scale(1.1);
 }
 
+.right-corner-flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 20%;
+  z-index: 1;
+}
+.right-corner-flag__text {
+  position: absolute;
+  top: 0.7em;
+  right: 0.4em;
+  font-size: 1.5em;
+  color: white;
+}
+
 .tour-item__modal-window {
   background: #fff;
   width: 100%;
@@ -309,6 +325,22 @@
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
 }
+.modal-window__social-bar {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  padding: 5%;
+}
+.modal-window__catalog-button {
+  text-align: center;
+}
+.catalog-button {
+  margin: 5%;
+  color: black;
+}
+.catalog-button__catalog-link {
+  text-decoration: none;
+}
 
 .modal-title-1 {
   background: url("../img-content/similan_03-1.jpg") no-repeat ;
@@ -344,19 +376,24 @@
   font-size: 1.2em;
   line-height: 3em;
 }
-.footer-list__footer-item:last-child {
+.footer-list__footer-item:first-child {
   text-align: right;
 }
+.footer-list__footer-item:last-child {
+  text-align: left;
+}
 .social-bar {
+  font-size: 1.5em;
   text-align: center;
 }
-.footer-item__link {
+.social-bar__link {
   padding: 0 0.5em;
   color: inherit;
-  text-decoration: none;
 }
 .footer-item__link-mail {
   display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /*reviews_page*/
@@ -429,9 +466,6 @@
 
 @media (max-width: 1024px) {
 
-  .category-list__item:hover {
-    background: none;
-  }
   .item-list__item:hover .item-list__link{
     border: none;
   }
@@ -446,6 +480,12 @@
   }
   .tour-item__title{
     font-size: 1.3em;
+  }
+
+  .right-corner-flag__text {
+    top: 1em;
+    right: 0.7em;
+    font-size: 1.9em;
   }
 
   .blocktxt {
@@ -507,6 +547,12 @@
     font-size: 1em;
   }
 
+  .right-corner-flag__text {
+    top: 1.2em;
+    right: 0.6em;
+    font-size: 4em;
+  }
+
   .modal-window__modal-title {
     font-size: 2.3em;
     height: 11em;
@@ -551,7 +597,7 @@
   .footer {
     font-size: 1.5em;
   }
-  .footer-item__link-mail.text {
+  .link-mail-text {
     display: none;
    }
 
