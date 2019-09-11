@@ -298,9 +298,9 @@
   color: white;
 }
 .modal-window__modal-content {
-  padding: 2%;
-  font-size: 0.75em;
-  line-height: 1.5em;
+  padding: 3%;
+  font-size: 0.9em;
+  line-height: 1.4em;
   border-bottom: 1px solid #ddd;
 }
 .modal-content__content {
@@ -333,17 +333,21 @@
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
-  padding: 2%;
+  padding: 3%;
 }
 .contact-us-stroke__number {
   display: inline-block;
   font-size: 1em;
-  padding: 2% 0 0 0;
+  text-decoration: none;
+  text-outline: none;
+  color: black;
+  padding: 2% 0 0 4%;
 }
 .contact-us-stroke__social-bar {
+  display: inline-block;
   font-size: 1.3em;
   text-align: center;
-  padding: 2% 0 0 0;
+  padding: 2% 4% 0 0;
 }
 .modal-window__catalog-button {
   text-align: center;
@@ -351,7 +355,7 @@
 .catalog-button {
   padding: 1%;
   background-color: skyblue;
-  border-radius: 0.5;
+  border-radius: 1em;
 }
 .catalog-button__catalog-link {
   text-decoration: none;
@@ -363,6 +367,7 @@
 }
 
 .modal-title-1 {
+  height: 20%;
   background: url("../img-content/similan_03-1.jpg") no-repeat ;
   background-position: center;
   background-size: cover;
@@ -501,13 +506,17 @@
   .tour-item__title{
     font-size: 1.3em;
   }
+  .modal-window__modal-content {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 
   .contact-us-stroke__number {
     font-size: 1.3em;
-}
+  }
   .contact-us-stroke__social-bar {
-  font-size: 1.7em;
-}
+    font-size: 1.7em;
+  }
 
   .right-corner-flag__text {
     top: 1em;
@@ -608,6 +617,22 @@
     height: 8em;
     width: 0.8em;
     background-color: white;
+  }
+
+  .contact-us-stroke__text {
+    display: block;
+    font-size: 2.5em;
+    padding: 0 0 5% 0;
+  }
+  .contact-us-stroke__number {
+    display: block;
+    font-size: 3em;
+    padding: 0 0 4% 0;
+  }
+  .contact-us-stroke__social-bar {
+    display: block;
+    font-size: 3em;
+    padding: 0 0 4% 0;
   }
 
   .blocktxt {
