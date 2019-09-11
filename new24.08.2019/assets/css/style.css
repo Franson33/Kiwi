@@ -340,7 +340,7 @@
   font-size: 1em;
   text-decoration: none;
   text-outline: none;
-  color: black;
+  color: inherit;
   padding: 2% 0 0 4%;
 }
 .contact-us-stroke__social-bar {
