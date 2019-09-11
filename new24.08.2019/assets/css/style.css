@@ -590,12 +590,12 @@
   }
 
   .modal-window__modal-title {
-    font-size: 2.3em;
-    height: 25%;
+    font-size: 3em;
+    height: 20%;
     text-align: center;
   }
   .modal-title {
-    margin-top: 4em;
+    margin-top: 5em;
   }
   .modal-window__modal-content {
     font-size: 2em;
