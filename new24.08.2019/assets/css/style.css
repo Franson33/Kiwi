@@ -255,6 +255,9 @@
   border-radius: 0.1em;
   padding: 0 3%;
 }
+.details-link:hover {
+  opacity: 0.8;
+}
 .tour-item__background-image:hover {
   transform: scale(1.1);
 }
@@ -336,12 +339,12 @@
 .contact-us-stroke__number {
   display: inline-block;
   font-size: 1.3em;
+  text-decoration: underline;
   color: royalblue;
   padding: 1.5%;
 }
 .contact-us-stroke__number:hover {
-  text-decoration: underline;
-  text-decoration-color: royalblue;
+  opacity: 0.8;
 }
 .contact-us-stroke__text {
   display: inline-block;
@@ -352,6 +355,9 @@
   text-align: center;
   padding: 1.5%;
 }
+.social-bar__link:hover {
+  opacity: 0.8;
+}
 .modal-window__catalog-button {
   text-align: center;
 }
@@ -359,6 +365,9 @@
   margin: 1%;
   padding: 1%;
   background-color: royalblue;
+}
+.catalog-button:hover {
+  opacity: 0.8;
 }
 .catalog-button__catalog-link {
   text-decoration: none;
