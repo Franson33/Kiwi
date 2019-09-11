@@ -247,10 +247,11 @@
   transform: translate(-50%, -50%);
   font-size: 0.7em;
   font-weight: 700;
+  text-decoration: none;
   color: black;
   text-transform: uppercase;
   background: RGBA(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 10px 3px RGBA(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px 3px RGBA(0, 0, 0, 0.8);
   border-radius: 0.1em;
   padding: 0 3%;
 }
@@ -294,8 +295,9 @@
   color: white;
 }
 .modal-window__modal-content {
-  padding: 4%;
+  padding: 3%;
   font-size: 0.75em;
+  border-bottom: 1px solid #ddd;
 }
 .modal-content__content {
   display: block;
@@ -325,21 +327,43 @@
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
 }
-.modal-window__social-bar {
-  color: black;
-  font-size: 3em;
+.modal-window__contact-us-stroke {
+  font-size: 1.5em;
+  font-weight: 600;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
+}
+.contact-us-stroke__number {
+  display: inline-block;
+  font-size: 1.3em;
+  color: royalblue;
+  padding: 1.5%;
+}
+.contact-us-stroke__number:hover {
+  text-decoration: underline;
+  text-decoration-color: royalblue;
+}
+.contact-us-stroke__text {
+  display: inline-block;
+}
+.contact-us-stroke__social-bar {
+  color: royalblue;
+  font-size: 1.7em;
+  text-align: center;
+  padding: 1.5%;
 }
 .modal-window__catalog-button {
   text-align: center;
 }
 .catalog-button {
-  margin: 5%;
-  color: black;
+  margin: 1%;
+  padding: 1%;
+  background-color: royalblue;
 }
 .catalog-button__catalog-link {
   text-decoration: none;
+  font-size: 1.5em;
+  color: white;
 }
 
 .modal-title-1 {
