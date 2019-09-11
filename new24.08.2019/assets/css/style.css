@@ -298,15 +298,15 @@
   color: white;
 }
 .modal-window__modal-content {
-  padding: 3%;
+  padding: 2%;
   font-size: 0.75em;
+  line-height: 1.5em;
   border-bottom: 1px solid #ddd;
 }
 .modal-content__content {
   display: block;
   float: left;
   width: 50%;
-  padding-bottom: 5%;
   white-space: pre-line;
   text-align: center;
  }
@@ -325,7 +325,6 @@
   cursor: pointer;
 }
 .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
-
 }
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
@@ -334,45 +333,33 @@
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
-  padding: 3%;
+  padding: 2%;
 }
 .contact-us-stroke__number {
   display: inline-block;
-  font-size: 1.3em;
-  text-decoration: underline;
-  color: royalblue;
-  padding: 1.5%;
-}
-.contact-us-stroke__number:hover {
-  opacity: 0.8;
-}
-.contact-us-stroke__text {
-  display: inline-block;
+  font-size: 1em;
+  padding: 2% 0 0 0;
 }
 .contact-us-stroke__social-bar {
-  color: royalblue;
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-align: center;
-  padding: 1.5%;
-}
-.social-bar__link:hover {
-  opacity: 0.8;
+  padding: 2% 0 0 0;
 }
 .modal-window__catalog-button {
   text-align: center;
 }
 .catalog-button {
-  margin: 1%;
   padding: 1%;
-  background-color: royalblue;
-}
-.catalog-button:hover {
-  opacity: 0.8;
+  background-color: skyblue;
+  border-radius: 0.5;
 }
 .catalog-button__catalog-link {
   text-decoration: none;
   font-size: 1.5em;
-  color: white;
+  color: black;
+}
+.catalog-button:hover, .social-bar__link:hover, .contact-us-stroke__number:hover {
+  opacity: 0.7;
 }
 
 .modal-title-1 {
@@ -515,6 +502,13 @@
     font-size: 1.3em;
   }
 
+  .contact-us-stroke__number {
+    font-size: 1.3em;
+}
+  .contact-us-stroke__social-bar {
+  font-size: 1.7em;
+}
+
   .right-corner-flag__text {
     top: 1em;
     right: 0.7em;
@@ -600,6 +594,7 @@
   }
   .modal-content__content {
     width: 100%;
+    padding-bottom: 5%;
   }
   .modal-content__timing {
     width: 100%;
