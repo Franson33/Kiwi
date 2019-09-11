@@ -591,11 +591,11 @@
 
   .modal-window__modal-title {
     font-size: 2.3em;
-    height: 11em;
+    height: 25%;
     text-align: center;
   }
   .modal-title {
-    margin-top: 5.5em;
+    margin-top: 4em;
   }
   .modal-window__modal-content {
     font-size: 2em;
