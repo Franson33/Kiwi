@@ -333,11 +333,11 @@
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
-  padding: 3%;
+  padding: 2%;
 }
 .contact-us-stroke__number {
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: none;
   text-outline: none;
   color: inherit;
@@ -345,7 +345,7 @@
 }
 .contact-us-stroke__social-bar {
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center;
   padding: 2% 4% 0 0;
 }
@@ -511,11 +511,19 @@
     line-height: 1.5em;
   }
 
+  .modal-window__contact-us-stroke {
+    padding: 1%;
+  }
   .contact-us-stroke__number {
-    font-size: 1.3em;
+    font-size: 1em;
+    padding-top: 1%;
   }
   .contact-us-stroke__social-bar {
-    font-size: 1.7em;
+    font-size: 1.2em;
+    padding-top: 1%;
+  }
+  .catalog-button__catalog-link {
+    font-size: 0.6em
   }
 
   .right-corner-flag__text {
@@ -595,7 +603,7 @@
     text-align: center;
   }
   .modal-title {
-    margin-top: 5em;
+    margin-top: 4.5em;
   }
   .modal-window__modal-content {
     font-size: 2em;
@@ -621,18 +629,21 @@
 
   .contact-us-stroke__text {
     display: block;
-    font-size: 2.5em;
+    font-size: 2.2em;
     padding: 0 0 5% 0;
   }
   .contact-us-stroke__number {
     display: block;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0 0 4% 0;
   }
   .contact-us-stroke__social-bar {
     display: block;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0 0 4% 0;
+  }
+  .catalog-button__catalog-link {
+    font-size: 1em;
   }
 
   .blocktxt {
