@@ -408,6 +408,13 @@
   background-size: cover;
   opacity: 0.7;
 }
+.background-7 {
+  height: 20%;
+  background: url("../img-content/3in1_02.jpg") no-repeat ;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
 
 .tour-1 {
   background-image: url(../img-content/similan_01.jpg);
@@ -426,6 +433,9 @@
 }
 .tour-6 {
   background-image: url(../img-content/flying_hanuman_01.jpg);
+}
+.tour-7 {
+  background-image: url(../img-content/3in1_01.jpg);
 }
 
 .footer {
@@ -696,9 +706,6 @@
   .footer {
     font-size: 1.5em;
   }
-  .link-mail-text {
-    display: none;
-   }
 
   .link {
     font-size: 1.5em;
