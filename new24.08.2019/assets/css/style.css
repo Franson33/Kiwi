@@ -415,6 +415,13 @@
   background-size: cover;
   opacity: 0.7;
 }
+.background-8 {
+  height: 20%;
+  background: url("../img-content/khao_lak_02.jpg") no-repeat ;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
 
 .tour-1 {
   background-image: url(../img-content/similan_01.jpg);
@@ -436,6 +443,9 @@
 }
 .tour-7 {
   background-image: url(../img-content/3in1_01.jpg);
+}
+.tour-8 {
+  background-image: url(../img-content/khao_lak_01.jpg);
 }
 
 .footer {
