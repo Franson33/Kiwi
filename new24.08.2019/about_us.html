@@ -34,10 +34,24 @@
             </div>
             <div class="navigation-menu__telephone-widget list">
               <a class="telephone-widget__link link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-              <a class="telephone-widget__link link" href="">+66631234567</a>
+              <a class="telephone-widget__link link" href="tel:+66631234567">+66631234567</a>
             </div>
           </div>
         </nav>
+        <div class="manager-button">
+          <button class="manager-button__button"></button>
+          <div class="manager-button__manager-modal-window">
+            <div class="manager-modal-window__modal-window-close"><button class="modal-window-close__button close-button"></div>
+            <div class="manager-modal-window__name">Алекса</div>
+            <div class="manager-modal-window__post">Позвонить для консультации нашему эксперту</div>
+            <div class="manager-modal-window__social-bar">
+              <a class="social-bar__link" title="Whatsapp" href="https://wa.me/79654560661?text=Добрый%20день%20хочу%20купить%20экскурсии!" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              <a class="social-bar__link" title="Telegram" href="https://t.me/ThaiLuxury" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+              <a class="social-bar__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <a class="manager-modal-window__number number-link" href="tel:+66631234567">+66631234567</a>
+          </div>
+        </div>
         <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
       <main class="main container">
@@ -60,12 +74,10 @@
         <div class="main__upwards-button">
           <div class="upwards-button__icon">
             <svg class="icon__up-arrow" viewbox="0 0 48 48" preserveAspectRatio="none">
-              <line x1="5" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="24" y1="5" x2="24" y2="43" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="43" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="10" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="38" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
             </svg>
           </div>
-          <span class="upwards-button__text">ВВЕРХ</span>
         </div>
         <div class="backwall">
           <svg class="greenblock" viewbox="0 0 320 75" preserveAspectRatio="none">
@@ -90,8 +102,8 @@
                </div>
             </div>
             <div class="img-lic"><img src="assets\img-content\license_01.jpg" alt="Лицензия"></div>
-            <div class=map>
-                <p>Тут будет окно гугл карт.</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.1721349414561!2d98.34045410031051!3d7.822753360217873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDknMjEuNiJOIDk4wrAyMCcyNy42IkU!5e0!3m2!1sru!2sru!4v1569186432320!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
           </div>
         </div>
@@ -112,15 +124,15 @@
               </div>
           </div>
         </footer>
-      <script type="text/javascript">
+      <script type="text/javascript">    <!--Открытие/закрытие меню навигации-->
          $('.navigation-menu__menu-toggle').on('click', function(){
           $('.navigation-menu__menu-items').toggleClass('active');
          });
          $('.close-button').on('click', function(){
           $('.navigation-menu__menu-items').removeClass('active');
          });
-        </script>    <!--Открытие/закрытие меню навигации-->
-      <script type="text/javascript">
+        </script>
+      <script type="text/javascript">    <!--Переключатель категории экскурсий-->
           $(document).ready(function() {
             $('.category-list__link').each(function(i) {
               $(this).attr('href', '#category' + i);
@@ -141,11 +153,21 @@
               $('.tour-category__category-item').not(choosen).addClass('hidden');
             });
           });
-        </script>   <!--Переключатель категории экскурсий-->
-      <script type="text/javascript">
+        </script>
+      <script type="text/javascript">    <!--Открытие/закрытие окна менеджера-->
+        $(document).ready(function() {
+          $('.manager-button__button').on('click', function(){
+            $('.manager-button__manager-modal-window').show();
+          });
+        $('.modal-window-close__button').on('click', function(){
+            $('.manager-button__manager-modal-window').hide();
+          });
+        });
+      </script>
+      <script type="text/javascript">    <!--При использовании тачскрина, клик ведет себя как ховер-->
           $('body').on('touchstart', function() {});
-        </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
-      <script type="text/javascript">
+        </script>
+      <script type="text/javascript">    <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
           $(document).ready(function() {
             $('.main__upwards-button');
 
@@ -167,6 +189,6 @@
               return false;
               });
           });
-        </script> <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
+        </script>
     </body>
   </html>

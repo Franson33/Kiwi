@@ -489,15 +489,15 @@
             </div>
         </div>
       </footer>
-      <script type="text/javascript">
+      <script type="text/javascript">    <!--Открытие/закрытие меню навигации-->
        $('.navigation-menu__menu-toggle').on('click', function(){
         $('.navigation-menu__menu-items').toggleClass('active');
        });
        $('.close-button').on('click', function(){
         $('.navigation-menu__menu-items').removeClass('active');
        });
-      </script>    <!--Открытие/закрытие меню навигации-->
-      <script type="text/javascript">
+      </script>
+      <script type="text/javascript">    <!--Открытие/закрытие окна менеджера-->
        $(document).ready(function() {
          $('.manager-button__button').on('click', function(){
            $('.manager-button__manager-modal-window').show();
@@ -506,8 +506,8 @@
            $('.manager-button__manager-modal-window').hide();
           });
         });
-      </script>    <!--Открытие/закрытие окна менеджера-->
-      <script type="text/javascript">
+      </script>
+      <script type="text/javascript">    <!--Переключатель категории экскурсий-->
         $(document).ready(function() {
           $('.category-list__link').each(function(i) {
             $(this).attr('href', '#category' + i);
@@ -528,8 +528,8 @@
             $('.tour-category__category-item').not(choosen).addClass('hidden');
           });
         });
-      </script>   <!--Переключатель категории экскурсий-->
-      <script type="text/javascript">
+      </script>
+      <script type="text/javascript">    <!--Скрипт открывает/закрывает модальное окно экскурсий-->
         $('.tour-item__click-open-modal').each(function(i) {
           $(this).attr('href', '#item' + i);
          });
@@ -547,11 +547,11 @@
         $('.modal-window__click-close-modal').click(function(){
           $('.category-item__tour-item').removeClass('modal-opened');
          });
-      </script> <!--Скрипт открывает/закрывает модальное окно экскурсий-->
-      <script type="text/javascript">
+      </script>
+      <script type="text/javascript">    <!--При использовании тачскрина, клик ведет себя как ховер-->
         $('body').on('touchstart', function() {});
-      </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
-      <script type="text/javascript">
+      </script>
+      <script type="text/javascript">    <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
         $(document).ready(function() {
           $('.main__upwards-button');
 
@@ -573,6 +573,6 @@
             return false;
             });
         });
-      </script> <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
+      </script>
     </body>
 </html>
