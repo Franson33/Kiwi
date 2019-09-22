@@ -178,10 +178,10 @@
 }
 .manager-button__manager-modal-window {
   display: none;
-  min-width: 310px;
+  max-width: 300px;
   background: white;
-  margin-top: -17%;
-  padding: 2%;
+  margin-top: -50px;
+  padding: 5px;
   border-radius: 5px;
 }
 .manager-modal-window__modal-window-close {
@@ -199,31 +199,34 @@
 }
 .modal-window-close__button.close-button:after, .modal-window-close__button.close-button:before {
   background-color: black;
-  left: 2em;
-  top: 1em;
+  left: 32px;
+  top: 12px;
 }
 .manager-modal-window__name{
-  font-size: 2em;
+  font-size: 24px;
   font-weight: 700;
+  padding: 5px;
 }
 .manager-modal-window__post {
-  font-size: 1.2em;
+  font-size: 18px;
+  line-height: 27px;
   white-space: pre-line;
-  padding: 2% 0 5%;
+  padding: 5px 0 5px;
 }
 .manager-modal-window__social-bar {
-  font-size: 1.5em;
-  padding-bottom: 5%;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 .manager-modal-window__number {
-  font-size: 2.2em;
+  font-size: 24px;
   font-weight: 600;
-  padding-bottom: 3%;
+  padding-bottom: 5px;
 }
 .manager-modal-window__number.number-link {
   text-decoration: none;
   color: black;
 }
+
 .main-wallpaper {
   display: block;
   width: 100%;
@@ -626,10 +629,6 @@
   .modal-window__modal-content {
     font-size: 1em;
     line-height: 1.5em;
-  }
-
-  .list {
-    font-size: 1.3em;
   }
 
   .modal-window__contact-us-stroke {
