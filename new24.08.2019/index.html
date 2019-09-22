@@ -297,7 +297,7 @@
                       </div>
                     </div>
                 </div>
-<!--                <div class="category-item__tour-item">
+                <div class="category-item__tour-item">
                     <div class="tour-item__background-image tour-7"></div>
                     <div class="tour-item__title"><h3>12 Островов</h3></div>
                     <a class="tour-item__link details-link tour-item__click-open-modal">Подробнее</a>
@@ -330,7 +330,7 @@
                          <button class="catalog-button"><a class="catalog-button__catalog-link" href="">Скачать каталог</a></button>
                       </div>
                     </div>
-                </div>    -->
+                </div>
               </div>
               <div class="tour-category__category-item category-phuket">
                 <div class="category-item__tour-item">
@@ -532,21 +532,21 @@
       <script type="text/javascript">
         $('.tour-item__click-open-modal').each(function(i) {
           $(this).attr('href', '#item' + i);
-        });
+         });
 
         $('.category-item__tour-item').each(function(i) {
           $(this).attr('id', 'item' + i);
-        })
+         });
 
         $('.tour-item__click-open-modal').click(function(){
           $('.category-item__tour-item').addClass('modal-opened');
           var choosenitem = $(this).attr('href');
           $('.category-item__tour-item').not(choosenitem).removeClass('modal-opened');
-        });
+         });
 
         $('.modal-window__click-close-modal').click(function(){
           $('.category-item__tour-item').removeClass('modal-opened');
-        });
+         });
       </script> <!--Скрипт открывает/закрывает модальное окно экскурсий-->
       <script type="text/javascript">
         $('body').on('touchstart', function() {});

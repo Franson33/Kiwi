@@ -137,14 +137,14 @@
 .main__upwards-button {
   display: none;
   position: fixed;
-  right:5%;
+  right:3%;
   bottom: 45%;
   padding: 0.4%;
   border: 0.2em solid darkolivegreen;
   border-radius: 50%;
   background-color: RGBA(255, 255, 255, 0.6);
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 .upwards-button__icon {
   position: relative;
@@ -156,7 +156,7 @@
 .manager-button {
   position: fixed;
   bottom: 3%;
-  right: 5%;
+  right: 3%;
   z-index: 4;
   text-align: center;
 }
@@ -176,7 +176,6 @@
   display: none;
   max-width: 300px;
   background: white;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
   margin-top: -50px;
   padding: 5px;
   border-radius: 5px;
@@ -349,12 +348,12 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-  top: 100%;
+  transition: all 700ms cubic-bezier(0.86, 0, 0.07, 1);
+  top: 150%;
   position: fixed;
   left: 0;
   text-align: left;
-  z-index: 4;
+  z-index: 3;
 }
 .modal-window__modal-title {
   padding: 3%;
