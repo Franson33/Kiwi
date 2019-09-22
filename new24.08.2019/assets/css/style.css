@@ -138,7 +138,7 @@
   display: none;
   position: fixed;
   right:5%;
-  bottom: 10%;
+  bottom: 40%;
 
   height: 6.5em;
   padding: 0.4%;
@@ -161,6 +161,69 @@
   color: darkolivegreen;
 }
 
+.manager-button {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  z-index: 3;
+  text-align: center;
+}
+.manager-button__button {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: url("../img/img_manager.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.manager-button__manager-modal-window {
+  display: none;
+  min-width: 310px;
+  background: white;
+  margin-top: -17%;
+  padding: 2%;
+  border-radius: 5px;
+}
+.manager-modal-window__modal-window-close {
+  width: 100%;
+  height: 45px;
+}
+.modal-window-close__button.close-button {
+  position: relative;
+  border: none;
+  background: transparent;
+  top: 0;
+  left: 40%;
+  height: 50px;
+  width: 50px;
+}
+.modal-window-close__button.close-button:after, .modal-window-close__button.close-button:before {
+  background-color: black;
+  left: 2em;
+  top: 1em;
+}
+.manager-modal-window__name{
+  font-size: 2em;
+  font-weight: 700;
+}
+.manager-modal-window__post {
+  font-size: 1.2em;
+  white-space: pre-line;
+  padding: 2% 0 5%;
+}
+.manager-modal-window__social-bar {
+  font-size: 1.5em;
+  padding-bottom: 5%;
+}
+.manager-modal-window__number {
+  font-size: 2.2em;
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+.manager-modal-window__number.number-link {
+  text-decoration: none;
+  color: black;
+}
 .main-wallpaper {
   display: block;
   width: 100%;
@@ -301,7 +364,6 @@
   padding: 3%;
   font-size: 0.9em;
   line-height: 1.4em;
-  border-bottom: 1px solid #ddd;
 }
 .modal-content__content {
   display: block;
@@ -321,10 +383,9 @@
 .modal-window__click-close-modal {
   display: block;
   min-height: 60px;
+  min-width: 50px;
   z-index: 6;
   cursor: pointer;
-}
-.modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
 }
 .category-item__tour-item.modal-opened .tour-item__modal-window {
   top: 0;
@@ -355,14 +416,15 @@
 .catalog-button {
   padding: 1%;
   background-color: skyblue;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 .catalog-button__catalog-link {
   text-decoration: none;
   font-size: 1.5em;
   color: black;
+  padding: 0 10%;
 }
-.catalog-button:hover, .social-bar__link:hover, .contact-us-stroke__number:hover {
+.catalog-button:hover, .social-bar__link:hover, .number-link:hover {
   opacity: 0.7;
 }
 
@@ -566,6 +628,10 @@
     line-height: 1.5em;
   }
 
+  .list {
+    font-size: 1.3em;
+  }
+
   .modal-window__contact-us-stroke {
     padding: 1%;
   }
@@ -674,13 +740,14 @@
   }
   .modal-window__click-close-modal.close-button {
     opacity: 1;
-    right: 5em;
    }
   .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
     height: 8em;
     width: 0.8em;
+    left: 5em;
     background-color: white;
   }
+
 
   .contact-us-stroke__text {
     display: block;
