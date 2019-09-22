@@ -74,12 +74,10 @@
         <div class="main__upwards-button">
           <div class="upwards-button__icon">
             <svg class="icon__up-arrow" viewbox="0 0 48 48" preserveAspectRatio="none">
-              <line x1="5" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="24" y1="5" x2="24" y2="43" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="43" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="10" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="38" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
             </svg>
           </div>
-          <span class="upwards-button__text">ВВЕРХ</span>
         </div>
         <div class="tour-category">
               <div class="tour-category__category-item category-sea">
@@ -450,7 +448,7 @@
           $('.main__upwards-button');
 
           $(window).scroll (function () {
-           if ($ (this).scrollTop () > 1000) {
+           if ($ (this).scrollTop () > 800) {
             $ ('.main__upwards-button').fadeIn();
            } else {
             $ ('.main__upwards-button').fadeOut();

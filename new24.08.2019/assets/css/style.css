@@ -138,12 +138,10 @@
   display: none;
   position: fixed;
   right:5%;
-  bottom: 35%;
-
-  height: 6.5em;
+  bottom: 45%;
   padding: 0.4%;
   border: 0.2em solid darkolivegreen;
-  border-radius: 0.8em;
+  border-radius: 50%;
   background-color: RGBA(255, 255, 255, 0.6);
   cursor: pointer;
   z-index: 2;
@@ -151,21 +149,15 @@
 .upwards-button__icon {
   position: relative;
   margin: 0 auto;
-  width: 4em;
-  height: 4em;
-}
-.upwards-button__text {
-  display: block;
-  text-align: center;
-  font-weight: 600;
-  color: darkolivegreen;
+  width: 3em;
+  height: 3em;
 }
 
 .manager-button {
   position: fixed;
   bottom: 3%;
   right: 5%;
-  z-index: 3;
+  z-index: 4;
   text-align: center;
 }
 .manager-button__button {
@@ -188,6 +180,7 @@
   margin-top: -50px;
   padding: 5px;
   border-radius: 5px;
+  border: 1px solid darkolivegreen;
 }
 .manager-modal-window__modal-window-close {
   width: 100%;
@@ -210,22 +203,23 @@
 .manager-modal-window__name{
   font-size: 24px;
   font-weight: 700;
-  padding: 5px;
+  padding: 15px;
 }
 .manager-modal-window__post {
   font-size: 18px;
   line-height: 27px;
   white-space: pre-line;
-  padding: 5px 0 5px;
+  padding: 5px 0 15px;
 }
 .manager-modal-window__social-bar {
   font-size: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .manager-modal-window__number {
+  display: block;
   font-size: 24px;
   font-weight: 600;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 .manager-modal-window__number.number-link {
   text-decoration: none;
@@ -701,6 +695,20 @@
     float: right;
   }
 
+  .upwards-button__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .manager-modal-window__social-bar {
+    font-size: 32px;
+  }
+  .modal-window-close__button.close-button:after, .modal-window-close__button.close-button:before {
+    left: 25px;
+    top: 0;
+    height: 3.5em;
+  }
+
   .category-item__tour-item {
     width: 100%;
     height: 77vw;
@@ -751,7 +759,6 @@
     left: 5em;
     background-color: white;
   }
-
 
   .contact-us-stroke__text {
     display: block;
