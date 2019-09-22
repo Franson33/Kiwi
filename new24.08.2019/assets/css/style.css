@@ -353,7 +353,7 @@
   position: fixed;
   left: 0;
   text-align: left;
-  z-index: 3;
+  z-index: 6;
 }
 .modal-window__modal-title {
   padding: 3%;
@@ -423,7 +423,7 @@
   text-decoration: none;
   font-size: 1.5em;
   color: black;
-  padding: 0 10%;
+  padding: 5px 15px ;
 }
 .catalog-button:hover, .social-bar__link:hover, .number-link:hover {
   opacity: 0.7;
