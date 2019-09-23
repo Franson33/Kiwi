@@ -516,8 +516,8 @@
   padding: 3%;
   background: #001a33;
   color: white;
-  font-size: 1.2em;
-  line-height: 2.4em;
+  font-size: 1em;
+  line-height: 2em;
 }
 .footer-list__footer-item {
   display: block;
@@ -529,7 +529,7 @@
   text-align: left;
 }
 .footer-list__footer-item:last-child {
-  text-align: right;
+  text-align: center;
   padding-right: 10%;
 }
 .social-bar__link:first-child {
@@ -552,13 +552,12 @@
 }
 .footer-item__telephone {
   text-decoration: none;
-  text-align: left;
-  font-size: 1.6em;
+  font-size: 1.9em;
   color: inherit;
 }
 .footer-list__footer-button {
   width: 100%;
-  padding: 5%;
+  padding: 4%;
 }
 .footer-button__link {
   text-decoration: none;
@@ -680,6 +679,27 @@
   .blocktxt {
     font-size: 1em;
   }
+
+  .footer {
+    padding-right: 10%;
+  }
+  .footer-list__footer-item {
+    width: 51%;
+    text-align: left;
+    float: left;
+  }
+  .footer-list__footer-item:last-child {
+    width: 48%;
+    float: right;
+    margin-top: -10%;
+  }
+  .footer-item__social-bar {
+    font-size: 2em;
+    padding-top: 3%;
+  }
+  .footer-item__telephone {
+    font-size: 2.5em;
+  }
 }
 
 @media (max-width: 638px) {
@@ -726,6 +746,9 @@
     height: 48px;
   }
 
+  .manager-button {
+    bottom: 9%;
+  }
   .manager-modal-window__social-bar {
     font-size: 32px;
   }
@@ -733,6 +756,15 @@
     left: 25px;
     top: 0;
     height: 3.5em;
+  }
+  .manager-modal-window__name {
+    padding: 25px;
+  }
+  .manager-modal-window__post {
+    padding: 0 0 25px;
+  }
+  .manager-modal-window__social-bar {
+    padding: 0 0 30px;
   }
 
   .category-item__tour-item {
@@ -820,9 +852,11 @@
   .footer {
     font-size: 2em;
     line-height: 2em;
+    padding: 3% 3% 7% 3%;
   }
-  .footer-list__footer-item {
+  .footer-list__footer-item, .footer-list__footer-item:first-child {
     width: 50%;
+    text-align: center;
   }
   .footer-list__footer-item:last-child {
     width: 100%;
@@ -851,8 +885,8 @@
 @media (max-width: 480px) {
 
   .footer {
-    font-size: 1.7em;
-    line-height: 3.4em;
+    font-size: 2em;
+    line-height: 2.5em;
   }
 
   .link {
