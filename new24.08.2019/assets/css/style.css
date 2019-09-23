@@ -513,20 +513,28 @@
 
 .footer {
   margin: 0;
-  padding: 3em 1.5em;
-  background: #3C3D41;
+  padding: 3%;
+  background: #001a33;
   color: white;
   font-size: 1.2em;
-  line-height: 3em;
+  line-height: 2.4em;
 }
-.footer-list__footer-item:first-child {
-  text-align: right;
+.footer-list__footer-item {
+  display: block;
+  width: 33.33333%;
+  float: left;
 }
 .footer-list__footer-item:last-child {
+  text-align: right;
+  padding-right: 9%;
+}
+.social-bar__link:first-child {
   text-align: left;
 }
-.social-bar {
-  font-size: 1.5em;
+.footer-item__social-bar .social-bar__link {
+  display: inline-block;
+  width: 33.33333%;
+  float: left;
   text-align: center;
 }
 .social-bar__link {
@@ -536,6 +544,11 @@
 .footer-item__link-mail {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
+}
+.footer-item__telephone {
+  text-decoration: none;
+  font-size: 1.3em;
   color: inherit;
 }
 
@@ -792,6 +805,14 @@
 
   .footer {
     font-size: 1.5em;
+    padding-right: 15%;
+  }
+  .footer-list__footer-item {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-list__footer-item:last-child {
+    text-align: center;
   }
 
   .link {
@@ -804,6 +825,7 @@
 
   .footer {
     font-size: 1.7em;
+    line-height: 3.4em;
   }
 
   .link {
