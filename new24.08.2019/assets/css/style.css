@@ -17,7 +17,7 @@
 }
 
 .body {
-  font-family: 'Candara', arial, sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 1em;
   line-height: 2em;
   color: #373737;
@@ -523,10 +523,14 @@
   display: block;
   width: 33.33333%;
   float: left;
+  text-align: center;
+}
+.footer-list__footer-item:first-child {
+  text-align: left;
 }
 .footer-list__footer-item:last-child {
   text-align: right;
-  padding-right: 9%;
+  padding-right: 10%;
 }
 .social-bar__link:first-child {
   text-align: left;
@@ -548,8 +552,18 @@
 }
 .footer-item__telephone {
   text-decoration: none;
-  font-size: 1.3em;
+  text-align: left;
+  font-size: 1.6em;
   color: inherit;
+}
+.footer-list__footer-button {
+  width: 100%;
+  padding: 5%;
+}
+.footer-button__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5em;
 }
 
 /*reviews_page*/
@@ -804,15 +818,28 @@
   }
 
   .footer {
-    font-size: 1.5em;
-    padding-right: 15%;
+    font-size: 2em;
+    line-height: 2em;
   }
   .footer-list__footer-item {
-    width: 100%;
-    text-align: center;
+    width: 50%;
   }
   .footer-list__footer-item:last-child {
+    width: 100%;
     text-align: center;
+    margin-top: 5%;
+    padding: 0;
+  }
+  .footer-item__telephone {
+    font-size: 3em;
+  }
+  .footer-item__social-bar {
+    font-size: 2em;
+    margin-top: 5%;
+  }
+  .footer-list__footer-button {
+    font-size: 1.5em;
+    margin-top: 5%;
   }
 
   .link {
