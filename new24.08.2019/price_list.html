@@ -38,6 +38,20 @@
             </div>
           </div>
         </nav>
+        <div class="manager-button">
+          <button class="manager-button__button"></button>
+          <div class="manager-button__manager-modal-window">
+            <div class="manager-modal-window__modal-window-close"><button class="modal-window-close__button close-button"></div>
+            <div class="manager-modal-window__name">Алекса</div>
+            <div class="manager-modal-window__post">Позвонить для консультации нашему эксперту</div>
+            <div class="manager-modal-window__social-bar">
+              <a class="social-bar__link" title="Whatsapp" href="https://wa.me/79654560661?text=Добрый%20день%20хочу%20купить%20экскурсии!" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              <a class="social-bar__link" title="Telegram" href="https://t.me/ThaiLuxury" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+              <a class="social-bar__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <a class="manager-modal-window__number number-link" href="tel:+66631234567">+66631234567</a>
+          </div>
+        </div>
         <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
       <main class="main container">
@@ -60,16 +74,14 @@
         <div class="main__upwards-button">
           <div class="upwards-button__icon">
             <svg class="icon__up-arrow" viewbox="0 0 48 48" preserveAspectRatio="none">
-              <line x1="5" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="24" y1="5" x2="24" y2="43" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
-              <line x1="43" y1="20" x2="24" y2="5" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="10" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
+              <line x1="38" y1="30" x2="24" y2="15" stroke="darkolivegreen" stroke-width="10" stroke-linecap="round"/>
             </svg>
           </div>
-          <span class="upwards-button__text">ВВЕРХ</span>
         </div>
         <div class="backwall">
             <svg class="greenblock" viewbox="0 0 320 30" preserveAspectRatio="none">
-              <polygon points="0,0 320,0 320,15 160,30 140,30 0,15" fill="rgb(90, 165, 35)"/>
+              <polygon points="0,0 320,0 320,15 160,30 140,30 0,15" fill="#001a33"/>
                 <text class="blocktxt" x="50%" y="90%" text-anchor="middle"></text>
             </svg>
         </div>
@@ -79,76 +91,109 @@
         </div>
       </main>
       <footer class="footer">
-            <div class="footer-list container">
-                <div class="footer-list__footer-item">
-                    <span class="footer-item__copyright">Киви Тур © 2019</span>
-                </div>
-                <div class="footer-list__footer-item social-bar">
-                    <a class="footer-item__link" title="Whatsapp" href="" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                    <a class="footer-item__link" title="Telegram" href="" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    <a class="footer-item__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
-                </div>
-                <div class="footer-list__footer-item">
-                    <a class="footer-item__link footer-item__link-mail" href="mailto:igor.shchedrov@gmail.com">Написать нам</a>
-                    <p class="footer-item__link-mail text">: igor.shchedrov@gmail.com</p>
+        <div class="footer-list container">
+            <div class="footer-list__footer-item">
+                <span class="footer-item__copyright">Киви Тур © 2019</span>
+                <p>Сделал Franson33</p>
+                <a class="footer-item__link-mail" href="mailto:igor.shchedrov@gmail.com">igor.shchedrov@gmail.com</a>
+            </div>
+            <div class="footer-list__footer-item">
+                <p>Тут что то будет</p>
+            </div>
+            <div class="footer-list__footer-item">
+                <a class="footer-item__telephone" href="tel:+66631234567">+66 63 123-45-67</a>
+                <button class="footer-list__footer-button"><a class="footer-button__link" href="">Скачать прайс</a></button>
+                <div class="footer-item__social-bar">
+                  <a class="social-bar__link" title="Whatsapp" href="https://wa.me/79654560661?text=Добрый%20день%20хочу%20купить%20экскурсии!" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                  <a class="social-bar__link" title="Telegram" href="https://t.me/@ThaiLuxury" target="_blank"><i class="fab fa-telegram-plane"></i>Телега</a>
+                  <a class="social-bar__link" title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
-          </footer>
-      <script type="text/javascript">
-           $('.navigation-menu__menu-toggle').on('click', function(){
-            $('.navigation-menu__menu-items').toggleClass('active');
-           });
-           $('.close-button').on('click', function(){
-            $('.navigation-menu__menu-items').removeClass('active');
-           });
-          </script>    <!--Открытие/закрытие меню навигации-->
-      <script type="text/javascript">
-            $(document).ready(function() {
-              $('.category-list__link').each(function(i) {
-                $(this).attr('href', '#category' + i);
-              });
-              $('.tour-category__category-item').each(function(i) {
-                $(this).attr('id', 'category' + i);
-              });
+        </div>
+      </footer>
+      <script type="text/javascript">    <!--Открытие/закрытие меню навигации-->
+       $('.navigation-menu__menu-toggle').on('click', function(){
+        $('.navigation-menu__menu-items').toggleClass('active');
+       });
+       $('.close-button').on('click', function(){
+        $('.navigation-menu__menu-items').removeClass('active');
+       });
+      </script>
+      <script type="text/javascript">    <!--Открытие/закрытие окна менеджера-->
+       $(document).ready(function() {
+         $('.manager-button__button').on('click', function(){
+           $('.manager-button__manager-modal-window').show();
+          });
+         $('.modal-window-close__button').on('click', function(){
+           $('.manager-button__manager-modal-window').hide();
+          });
+        });
+      </script>
+      <script type="text/javascript">    <!--Переключатель категории экскурсий-->
+        $(document).ready(function() {
+          $('.category-list__link').each(function(i) {
+            $(this).attr('href', '#category' + i);
+          });
+          $('.tour-category__category-item').each(function(i) {
+            $(this).attr('id', 'category' + i);
+          });
 
-              var choosen = $(this).find('.category-list__link').attr('href');
-              $('.tour-category__category-item').removeClass('hidden');
-              $('.tour-category__category-item').not(choosen).addClass('hidden');
+          var choosen = $(this).find('.category-list__link').attr('href');
+          $('.tour-category__category-item').removeClass('hidden');
+          $('.tour-category__category-item').not(choosen).addClass('hidden');
 
-              $('.category-widget li').click(function() {
-                $('.category-widget .active').removeClass('active');
-                $(this).addClass('active');
-                var choosen = $(this).find('.category-list__link').attr('href');
-                $('.tour-category__category-item').removeClass('hidden');
-                $('.tour-category__category-item').not(choosen).addClass('hidden');
-              });
+          $('.category-widget li').click(function() {
+            $('.category-widget .active').removeClass('active');
+            $(this).addClass('active');
+            var choosen = $(this).find('.category-list__link').attr('href');
+            $('.tour-category__category-item').removeClass('hidden');
+            $('.tour-category__category-item').not(choosen).addClass('hidden');
+          });
+        });
+      </script>
+      <script type="text/javascript">    <!--Скрипт открывает/закрывает модальное окно экскурсий-->
+        $('.tour-item__click-open-modal').each(function(i) {
+          $(this).attr('href', '#item' + i);
+         });
+
+        $('.category-item__tour-item').each(function(i) {
+          $(this).attr('id', 'item' + i);
+         });
+
+        $('.tour-item__click-open-modal').click(function(){
+          $('.category-item__tour-item').addClass('modal-opened');
+          var choosenitem = $(this).attr('href');
+          $('.category-item__tour-item').not(choosenitem).removeClass('modal-opened');
+         });
+
+        $('.modal-window__click-close-modal').click(function(){
+          $('.category-item__tour-item').removeClass('modal-opened');
+         });
+      </script>
+      <script type="text/javascript">    <!--При использовании тачскрина, клик ведет себя как ховер-->
+        $('body').on('touchstart', function() {});
+      </script>
+      <script type="text/javascript">    <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
+        $(document).ready(function() {
+          $('.main__upwards-button');
+
+          $(window).scroll (function () {
+           if ($ (this).scrollTop () > 800) {
+            $ ('.main__upwards-button').fadeIn();
+           } else {
+            $ ('.main__upwards-button').fadeOut();
+           }
+          });
+
+          $('.main__upwards-button').click(function(){
+            $('html').animate({
+              scrollTop: 0
+              }, 100);
+            $('body').animate({
+                scrollTop: 0
+              }, 100);
+            return false;
             });
-          </script>   <!--Переключатель категории экскурсий-->
-      <script type="text/javascript">
-            $('body').on('touchstart', function() {});
-          </script>    <!--При использовании тачскрина, клик ведет себя как ховер-->
-      <script type="text/javascript">
-            $(document).ready(function() {
-              $('.main__upwards-button');
-
-              $(window).scroll (function () {
-               if ($ (this).scrollTop () > 1000) {
-                $ ('.main__upwards-button').fadeIn();
-               } else {
-                $ ('.main__upwards-button').fadeOut();
-               }
-              });
-
-              $('.main__upwards-button').click(function(){
-                $('html').animate({
-                  scrollTop: 0
-                  }, 100);
-                $('body').animate({
-                    scrollTop: 0
-                  }, 100);
-                return false;
-                });
-            });
-          </script> <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
-      </body>
+        });
+      </script>
     </html>
