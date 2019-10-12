@@ -527,10 +527,15 @@
 }
 .footer-list__footer-item:first-child {
   text-align: left;
+  padding-left: 5%;
 }
 .footer-list__footer-item:last-child {
   text-align: center;
   padding-right: 10%;
+}
+.footer-item_company-logo {
+  weight: 150px;
+  height: 150px;
 }
 .social-bar__link:first-child {
   text-align: left;
@@ -697,6 +702,11 @@
     width: 48%;
     float: right;
     margin-top: -10%;
+  }
+  .footer-item_company-logo {
+    weight: 100px;
+    height: 100px;
+    padding-left: 10%;
   }
   .footer-item__social-bar {
     font-size: 2em;
