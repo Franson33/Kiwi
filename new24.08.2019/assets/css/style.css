@@ -40,8 +40,7 @@
   transition: .3s ease-in-out;
 }
 .item-list__item:hover .item-list__link {
-  border-top: 2px solid yellowgreen;
-  border-bottom: 2px solid yellowgreen;
+  opacity: 0.7;
 }
 .item-list__item {
   display: block;
@@ -124,14 +123,11 @@
 }
 .telephone-widget__link {
   position: relative;
-  font-size: 1.1em;
-}
-.telephone-widget__link .fa-whatsapp:hover {
-  color: yellowgreen;
+  font-size: 1.2em;
+  padding: 0 7px;
 }
 .telephone-widget__link:hover {
-  text-decoration: underline;
-  text-decoration-color: yellowgreen;
+  opacity: 0.7;
 }
 
 .main__upwards-button {
@@ -168,6 +164,7 @@
   background: url("../img/img_manager.jpg");
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 .manager-button__button:focus {
   outline: none;
@@ -236,9 +233,8 @@
 }
 
 .category-widget{
-  min-height: 20%;
-  background-color: white;
-  opacity: 0.95;
+  display: block;
+  background: white;
 }
 .widget-sticky {
   position: sticky;
@@ -246,20 +242,22 @@
   top: 0;
   z-index: 3;
 }
+.category-widget__category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 50px;
+}
 .category-list__item {
-  float: left;
+  display: flex;
+  margin: auto;
   width: 25%;
+  height: 50px;
   border-bottom: 0.3em solid transparent;
-  background-color: white;
-  opacity: 0.95;
 }
 .category-list__link {
-  display: inline-block;
-  width:100%;
-  text-align: center;
+  margin: auto;
   line-height: 2em;
-  padding-right: 5%;
-  margin-top: 0.3em;
 }
 .category-list__item:hover {
   background-color: rgba(105,105,105,0.7);
@@ -293,9 +291,6 @@
   background-position: center;
   transition: transform .7s ease;
 }
-.tour-item__link {
-  cursor: pointer;
-}
 .tour-item__title {
   position: relative;
   float:left;
@@ -304,20 +299,27 @@
   font-size: 0.85em;
   text-shadow: 0px 0px 1px RGBA(255, 255, 255, 1), 2px -1px 0px RGBA(47, 79, 79, 0.8);
 }
-.details-link {
+.tour-item__button{
+  display: flex;
   position: absolute;
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 0.7em;
-  font-weight: 700;
+  background: RGBA(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 5px 3px RGBA(0, 0, 0, 0.8);
+  border-radius: 0.2em;
+}
+.tour-item__link {
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: 600;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  background: RGBA(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 5px 3px RGBA(0, 0, 0, 0.8);
-  border-radius: 0.1em;
-  padding: 0 3%;
+}
+.details-link {
+  padding: 14px 20px 0 20px;
 }
 .details-link:hover {
   opacity: 0.8;
@@ -431,84 +433,84 @@
 
 .background-1 {
   height: 20%;
-  background: url("../img-content/similan_03-1.jpg") no-repeat ;
+  background: url("../img-content/similan_02_.jpg") no-repeat ;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-2 {
   height: 20%;
-  background: url("../img-content/phi_phi_02.jpg") no-repeat;
+  background: url("../img-content/phi_phi_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-3 {
   height: 20%;
-  background: url("../img-content/james_bond_02.jpg") no-repeat;
+  background: url("../img-content/james_bond_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-4 {
   height: 20%;
-  background: url("../img-content/flying_hanuman_02.jpg") no-repeat;
+  background: url("../img-content/flying_hanuman_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-5 {
   height: 20%;
-  background: url("../img-content/amazing_phang_nga_02.jpg") no-repeat;
+  background: url("../img-content/amazing_phang_nga_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-6 {
   height: 20%;
-  background: url("../img-content/phuket_fantasea_show_02.jpg") no-repeat;
+  background: url("../img-content/phuket_fantasea_show_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-7 {
   height: 20%;
-  background: url("../img-content/3in1_02.jpg") no-repeat;
+  background: url("../img-content/3in1_02_.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 .background-8 {
   height: 20%;
-  background: url("../img-content/khao_lak_02.jpg") no-repeat ;
+  background: url("../img-content/khao_lak_02_.jpg") no-repeat ;
   background-position: center;
   background-size: cover;
   opacity: 0.7;
 }
 
 .tour-1 {
-  background-image: url(../img-content/similan_01.jpg);
+  background-image: url(../img-content/similan_01_.jpg);
 }
 .tour-2 {
-  background-image: url(../img-content/phi_phi_01.jpg);
+  background-image: url(../img-content/phi_phi_01_.jpg);
 }
 .tour-3 {
-  background-image: url(../img-content/james_bond_01.jpg);
+  background-image: url(../img-content/james_bond_01_.jpg);
 }
 .tour-4 {
-  background-image: url(../img-content/amazing_phang_nga_01.jpg);
+  background-image: url(../img-content/amazing_phang_nga_01_.jpg);
 }
 .tour-5 {
-  background-image: url(../img-content/phuket_fantasea_show_01.jpg);
+  background-image: url(../img-content/phuket_fantasea_show_01_.jpg);
 }
 .tour-6 {
-  background-image: url(../img-content/flying_hanuman_01.jpg);
+  background-image: url(../img-content/flying_hanuman_01_.jpg);
 }
 .tour-7 {
-  background-image: url(../img-content/3in1_01.jpg);
+  background-image: url(../img-content/3in1_01_.jpg);
 }
 .tour-8 {
-  background-image: url(../img-content/khao_lak_01.jpg);
+  background-image: url(../img-content/khao_lak_01_.jpg);
 }
 
 .footer {
@@ -542,12 +544,13 @@
 }
 .footer-item__social-bar .social-bar__link {
   display: inline-block;
+  font-size: 1.5em;
   width: 33.33333%;
   float: left;
   text-align: center;
 }
 .social-bar__link {
-  padding: 0 0.5em;
+  padding: 10px;
   color: inherit;
 }
 .footer-item__link-mail {
@@ -653,13 +656,10 @@
     width: 50%;
     height: 40vw;
     }
-  .details-link {
-    font-size: 0.95em;
-    padding: 2%;
-  }
   .tour-item__title{
     font-size: 1.3em;
   }
+
   .modal-window__modal-content {
     font-size: 1em;
     line-height: 1.5em;
@@ -719,6 +719,10 @@
 
 @media (max-width: 638px) {
 
+  .link {
+    font-size: 1.5em;
+  }
+
   .navigation-menu__menu-toggle {
     display: block;
   }
@@ -754,6 +758,10 @@
   .navigation-menu__telephone-widget {
     position: relative;
     float: right;
+    margin: 3% 3% 0 0;
+  }
+  .telephone-widget__link {
+    font-size: 2.5em;
   }
 
   .upwards-button__icon {
@@ -788,13 +796,6 @@
   }
   .tour-item__title{
     font-size: 2.8em;
-  }
-  .tour-item__link.details-link {
-    padding: 2%;
-    font-size: 1.7em;
-  }
-  .tour-item__link {
-    font-size: 1em;
   }
 
   .right-corner-flag__text {
@@ -893,21 +894,23 @@
     margin-top: 5%;
   }
 
-  .link {
-    font-size: 1.5em;
-  }
-
 }
 
 @media (max-width: 480px) {
+
+  .link {
+    font-size: 1.7em;
+  }
+
+  .telephone-widget__link {
+    font-size: 2.5em;
+  }
 
   .footer {
     font-size: 2em;
     line-height: 2.5em;
   }
 
-  .link {
-    font-size: 1.7em;
-  }
+
 
 }
