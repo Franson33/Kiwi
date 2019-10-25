@@ -233,8 +233,7 @@
 }
 
 .category-widget{
-  display: block;
-  background: white;
+  min-height: 50px;
 }
 .widget-sticky {
   position: sticky;
@@ -244,14 +243,12 @@
 }
 .category-widget__category-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  min-height: 50px;
+  width: 100%;
+  background: white;
 }
 .category-list__item {
-  display: flex;
-  margin: auto;
-  width: 25%;
+  display: inline-flex;
+  width: 100%;
   height: 50px;
   border-bottom: 0.3em solid transparent;
 }
@@ -301,6 +298,7 @@
 }
 .tour-item__button{
   display: flex;
+  height: 50px;
   position: absolute;
   top: 85%;
   left: 50%;
@@ -310,8 +308,9 @@
   border-radius: 0.2em;
 }
 .tour-item__link {
+  display: block;
   cursor: pointer;
-  height: 50px;
+  margin: auto;
   font-size: 1.5em;
   font-weight: 600;
   text-decoration: none;
@@ -319,7 +318,7 @@
   text-transform: uppercase;
 }
 .details-link {
-  padding: 14px 20px 0 20px;
+  padding: 0 20px;
 }
 .details-link:hover {
   opacity: 0.8;
@@ -350,7 +349,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: all 700ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 900ms ease-out;;
   top: 150%;
   position: fixed;
   left: 0;
