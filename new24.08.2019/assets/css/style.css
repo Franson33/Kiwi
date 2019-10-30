@@ -202,7 +202,7 @@
 }
 .modal-window-close__button.close-button:after, .modal-window-close__button.close-button:before {
   background-color: black;
-  left: 32px;
+  left: 12px;
   top: 12px;
 }
 .manager-modal-window__name{
