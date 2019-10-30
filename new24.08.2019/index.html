@@ -9,9 +9,10 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
     <body class="body">
-      <header class="header container">
+      <header class="header container wrapper">
         <nav class="navigation-menu">
             <div class="navigation-menu__menu-toggle">
               <div class="menu-toggle__icon">
@@ -33,10 +34,12 @@
               </ul>
             </div>
             <div class="navigation-menu__telephone-widget list">
-              <a class="telephone-widget__link link" title="Whatsapp" href="https://wa.me/79654560661?text=Добрый%20день%20хочу%20купить%20экскурсии!" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              <a class="telephone-widget__link link" title="Telegram" href="https://t.me/ThaiLuxury" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-              <a class="telephone-widget__link link" title="Instagram" href="" target="_blank"><i class="fab fa-instagram"></i></a>
               <a class="telephone-widget__link link" href="tel:+66631234567">+66631234567</a>
+              <div class="telephone-widget__link link">
+                <a class="telephone-widget__social-icon" title="Whatsapp" href="https://wa.me/79654560661?text=Добрый%20день%20хочу%20купить%20экскурсии!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a class="telephone-widget__social-icon" title="Telegram" href="https://t.me/ThaiLuxury" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                <a class="telephone-widget__social-icon" title="Instagram" href="" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
             </div>
           </div>
         </nav>
@@ -56,7 +59,8 @@
         </div>
         <img class="main-wallpaper" src="assets\img\main-wallpaper-01-min.svg" alt="Логотип компании, вокруг тропический остров">
       </header>
-      <main class="main container">
+      <main class="main ">
+        <div class="container wrapper">
         <div class="category-widget widget-sticky">
           <ul class="category-widget__category-list list">
              <li class="category-list__item category-sea active">
@@ -497,12 +501,15 @@
                 </div>
               </div>
         </div>
+        </div>
+        </div>
       </main>
       <footer class="footer">
-        <div class="footer-list container">
+        <div class="footer-list container wrapper">
             <div class="footer-list__footer-item">
                 <span class="footer-item__copyright">Киви Тур © 2019</span>
                 <p>Сделал Franson33</p>
+                <p>Написать нам</p>
                 <a class="footer-item__link-mail" href="mailto:igor.shchedrov@gmail.com">igor.shchedrov@gmail.com</a>
             </div>
             <div class="footer-list__footer-item">
@@ -519,90 +526,5 @@
             </div>
         </div>
       </footer>
-      <script type="text/javascript">    <!--Открытие/закрытие меню навигации-->
-       $('.navigation-menu__menu-toggle').on('click', function(){
-        $('.navigation-menu__menu-items').toggleClass('active');
-       });
-       $('.close-button').on('click', function(){
-        $('.navigation-menu__menu-items').removeClass('active');
-       });
-      </script>
-      <script type="text/javascript">    <!--Открытие/закрытие окна менеджера-->
-       $(document).ready(function() {
-         $('.manager-button__button').on('click', function(){
-           $('.manager-button__manager-modal-window').show();
-          });
-         $('.modal-window-close__button').on('click', function(){
-           $('.manager-button__manager-modal-window').hide();
-          });
-        });
-      </script>
-      <script type="text/javascript">    <!--Переключатель категории экскурсий-->
-        $(document).ready(function() {
-          $('.category-list__link').each(function(i) {
-            $(this).attr('href', '#category' + i);
-          });
-          $('.tour-category__category-item').each(function(i) {
-            $(this).attr('id', 'category' + i);
-          });
-
-          var choosen = $(this).find('.category-list__link').attr('href');
-          $('.tour-category__category-item').removeClass('hidden');
-          $('.tour-category__category-item').not(choosen).addClass('hidden');
-
-          $('.category-widget li').click(function() {
-            $('.category-widget .active').removeClass('active');
-            $(this).addClass('active');
-            var choosen = $(this).find('.category-list__link').attr('href');
-            $('.tour-category__category-item').removeClass('hidden');
-            $('.tour-category__category-item').not(choosen).addClass('hidden');
-          });
-        });
-      </script>
-      <script type="text/javascript">    <!--Скрипт открывает/закрывает модальное окно экскурсий-->
-        $('.tour-item__click-open-modal').each(function(i) {
-          $(this).attr('href', '#item' + i);
-         });
-
-        $('.category-item__tour-item').each(function(i) {
-          $(this).attr('id', 'item' + i);
-         });
-
-        $('.tour-item__click-open-modal').click(function(){
-          $('.category-item__tour-item').addClass('modal-opened');
-          var choosenitem = $(this).attr('href');
-          $('.category-item__tour-item').not(choosenitem).removeClass('modal-opened');
-         });
-
-        $('.modal-window__click-close-modal').click(function(){
-          $('.category-item__tour-item').removeClass('modal-opened');
-         });
-      </script>
-      <script type="text/javascript">    <!--При использовании тачскрина, клик ведет себя как ховер-->
-        $('body').on('touchstart', function() {});
-      </script>
-      <script type="text/javascript">    <!--Кнопка вверх появляется и исчезает, при нажатии прокручивает страницу вверх-->
-        $(document).ready(function() {
-          $('.main__upwards-button');
-
-          $(window).scroll (function () {
-           if ($ (this).scrollTop () > 800) {
-            $ ('.main__upwards-button').fadeIn();
-           } else {
-            $ ('.main__upwards-button').fadeOut();
-           }
-          });
-
-          $('.main__upwards-button').click(function(){
-            $('html').animate({
-              scrollTop: 0
-              }, 100);
-            $('body').animate({
-                scrollTop: 0
-              }, 100);
-            return false;
-            });
-        });
-      </script>
     </body>
 </html>

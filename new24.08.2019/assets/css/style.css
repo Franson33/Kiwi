@@ -7,7 +7,7 @@
 
 .list {
   list-style: none;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 600;
 }
 .link {
@@ -18,13 +18,13 @@
 
 .body {
   font-family: "PT Serif", serif;
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 16px;
+  line-height: 32px;
   color: #001a33;
   background-color: white;
 }
 
-.header::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after, .category-widget.widget-sticky::after, .modal-window__modal-content::after {
+.header::after, .main::after, .container::after, .footer::after, .tour-category .tour-category__category-item::after, .category-widget.widget-sticky::after, .modal-window__modal-content::after {
   content: "";
   display: table;
   clear: both;
@@ -36,8 +36,12 @@
   padding: 0 0%;
 }
 
+.wrapper {
+  max-width: 1800px;
+}
+
 .navigation-menu__menu-items {
-  transition: .3s ease-in-out;
+  transition: .5s ease-in-out;
 }
 .item-list__item:hover .item-list__link {
   opacity: 0.7;
@@ -57,11 +61,11 @@
   height: 100%;
   width: 100%;
   text-decoration-color: #001a33;
-  line-height: 3.5em;
-  font-size: 2.5em;
+  line-height: 40px;
+  font-size: 26px;
   background-color: rgba(105,105,105,0.9);
   overflow: visible;
-  z-index: 4;
+  z-index: 10;
 }
 
 .navigation-menu__menu-toggle {
@@ -122,12 +126,17 @@
   margin: 2% 2% 0 0;
 }
 .telephone-widget__link {
+  display: flex;
   position: relative;
-  font-size: 1.2em;
+  font-size: 25px;
   padding: 0 7px;
 }
 .telephone-widget__link:hover {
   opacity: 0.7;
+}
+.telephone-widget__social-icon {
+  margin: auto;
+  color: inherit;
 }
 
 .main__upwards-button {
@@ -230,6 +239,7 @@
 .main {
   overflow: visible;
   -webkit-overflow-scrolling: touch;
+  background: #001a33;
 }
 
 .category-widget{
@@ -254,7 +264,7 @@
 }
 .category-list__link {
   margin: auto;
-  line-height: 2em;
+  line-height: 32px;
 }
 .category-list__item:hover {
   background-color: rgba(105,105,105,0.7);
@@ -293,7 +303,7 @@
   float:left;
   padding: 5% 0 0 5%;
   color: white;
-  font-size: 0.85em;
+  font-size: 16px;
   text-shadow: 0px 0px 1px RGBA(255, 255, 255, 1), 2px -1px 0px RGBA(47, 79, 79, 0.8);
 }
 .tour-item__button{
@@ -311,7 +321,7 @@
   display: block;
   cursor: pointer;
   margin: auto;
-  font-size: 1.5em;
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   color: black;
@@ -337,9 +347,9 @@
 }
 .right-corner-flag__text {
   position: absolute;
-  top: 0.7em;
-  right: 0.4em;
-  font-size: 1.5em;
+  top: 0.8em;
+  right: 0.5em;
+  font-size: 22px;
   color: white;
 }
 
@@ -364,8 +374,8 @@
 }
 .modal-window__modal-content {
   padding: 3%;
-  font-size: 0.9em;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 18px;
 }
 .modal-content__content {
   display: block;
@@ -393,14 +403,14 @@
   top: 0;
 }
 .modal-window__contact-us-stroke {
-  font-size: 1.5em;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   padding: 2%;
 }
 .contact-us-stroke__number {
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 34px;
   text-decoration: none;
   text-outline: none;
   color: inherit;
@@ -408,7 +418,7 @@
 }
 .contact-us-stroke__social-bar {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 34px;
   text-align: center;
   padding: 2% 4% 0 0;
 }
@@ -422,7 +432,7 @@
 }
 .catalog-button__catalog-link {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 26px;
   color: black;
   padding: 5px 15px ;
 }
@@ -517,8 +527,8 @@
   padding: 3%;
   background: #001a33;
   color: white;
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 20px;
+  line-height: 30px;
 }
 .footer-list__footer-item {
   display: block;
@@ -535,7 +545,7 @@
   padding-right: 10%;
 }
 .footer-item_company-logo {
-  weight: 150px;
+  width: 150px;
   height: 150px;
 }
 .social-bar__link:first-child {
@@ -543,7 +553,7 @@
 }
 .footer-item__social-bar .social-bar__link {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 34px;
   width: 33.33333%;
   float: left;
   text-align: center;
@@ -554,12 +564,12 @@
 }
 .footer-item__link-mail {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 .footer-item__telephone {
   text-decoration: none;
-  font-size: 1.9em;
+  font-size: 34px;
   color: inherit;
 }
 .footer-list__footer-button {
@@ -569,7 +579,10 @@
 .footer-button__link {
   text-decoration: none;
   color: inherit;
-  font-size: 1.5em;
+  font-size: 26px;
+}
+.footer-item__link-mail:hover, .footer-item__telephone:hover {
+  opacity: 0.8;
 }
 
 /*reviews_page*/
@@ -613,7 +626,7 @@
 .about-us__adress-thailand {
   padding: %;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 22px;
 }
 .license {
   margin-top: 4%;
@@ -647,8 +660,16 @@
 
 @media (max-width: 1024px) {
 
+  .item-list__item {
+    padding-right: 10px;
+  }
+
   .item-list__item:hover .item-list__link{
     border: none;
+  }
+
+  .telephone-widget__link {
+    font-size: 18px;
   }
 
   .category-item__tour-item {
@@ -660,8 +681,8 @@
   }
 
   .modal-window__modal-content {
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .modal-window__contact-us-stroke {
@@ -672,54 +693,40 @@
     padding-top: 1%;
   }
   .contact-us-stroke__social-bar {
-    font-size: 1.2em;
+    font-size: 24px;
     padding-top: 1%;
   }
   .catalog-button__catalog-link {
-    font-size: 0.6em
+    font-size: 18px;
   }
 
   .right-corner-flag__text {
-    top: 1em;
-    right: 0.7em;
-    font-size: 1.9em;
+    top: 25px;
+    right: 15px;
+    font-size: 26px;
   }
 
   .blocktxt {
-    font-size: 1em;
+    font-size: 18px;
   }
 
   .footer {
-    padding-right: 10%;
+    padding-right: 35px;
   }
-  .footer-list__footer-item {
-    width: 51%;
-    text-align: left;
-    float: left;
-  }
-  .footer-list__footer-item:last-child {
-    width: 48%;
-    float: right;
-    margin-top: -10%;
-  }
-  .footer-item_company-logo {
-    weight: 100px;
-    height: 100px;
-    padding-left: 10%;
-  }
+
   .footer-item__social-bar {
-    font-size: 2em;
+    font-size: 24px;
     padding-top: 3%;
   }
   .footer-item__telephone {
-    font-size: 2.5em;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 638px) {
 
   .link {
-    font-size: 1.5em;
+    font-size: 22px;
   }
 
   .navigation-menu__menu-toggle {
@@ -757,10 +764,10 @@
   .navigation-menu__telephone-widget {
     position: relative;
     float: right;
-    margin: 3% 3% 0 0;
+    margin: 5% 3% 0 0;
   }
   .telephone-widget__link {
-    font-size: 2.5em;
+    font-size: 24px;
   }
 
   .upwards-button__icon {
@@ -789,31 +796,35 @@
     padding: 0 0 30px;
   }
 
+  .category-list__link{
+    font-size: 16px;
+  }
+
   .category-item__tour-item {
     width: 100%;
     height: 77vw;
   }
   .tour-item__title{
-    font-size: 2.8em;
+    font-size: 24px;
   }
 
   .right-corner-flag__text {
-    top: 1.2em;
-    right: 0.6em;
-    font-size: 4em;
+    top: 40px;
+    right: 20px;
+    font-size: 32px;
   }
 
   .modal-window__modal-title {
-    font-size: 2.7em;
-    height: 20%;
+    font-size: 30px ;
+    height: 250px;
     text-align: center;
   }
   .modal-title {
-    margin-top: 4.2em;
+    margin-top: 180px;
   }
   .modal-window__modal-content {
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 18px;
+    line-height: 26px;
   }
   .modal-content__content {
     width: 100%;
@@ -827,29 +838,29 @@
     opacity: 1;
    }
   .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
-    height: 8em;
-    width: 0.8em;
-    left: 5em;
+    height: 75px;
+    width: 10px;
+    left: 20px;
     background-color: white;
   }
 
   .contact-us-stroke__text {
     display: block;
-    font-size: 2.2em;
+    font-size: 40px;
     padding: 0 0 5% 0;
   }
   .contact-us-stroke__number {
     display: block;
-    font-size: 2.5em;
+    font-size: 40px;
     padding: 0 0 4% 0;
   }
   .contact-us-stroke__social-bar {
     display: block;
-    font-size: 2.5em;
+    font-size: 40px;
     padding: 0 0 4% 0;
   }
   .catalog-button__catalog-link {
-    font-size: 1em;
+    font-size: 30px;
   }
 
   .blocktxt {
@@ -867,9 +878,13 @@
   }
 
   .footer {
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 28px;
+    line-height: 42px;
     padding: 3% 3% 7% 3%;
+  }
+  .footer-item_company-logo {
+    width: 100px;
+    height: 100px;
   }
   .footer-list__footer-item, .footer-list__footer-item:first-child {
     width: 50%;
@@ -882,34 +897,78 @@
     padding: 0;
   }
   .footer-item__telephone {
-    font-size: 3em;
+    font-size: 60px;
   }
-  .footer-item__social-bar {
-    font-size: 2.5em;
+  .social-bar__link {
+    font-size: 40px;
+  }
+  }
+  .footer-list_footer-button {
     margin-top: 5%;
   }
-  .footer-list__footer-button {
-    font-size: 1.5em;
-    margin-top: 5%;
+  .footer-item__social-bar .social-bar__link {
+    font-size: 60px;
   }
-
-}
 
 @media (max-width: 480px) {
 
   .link {
-    font-size: 1.7em;
+    font-size: 16px;
   }
 
   .telephone-widget__link {
-    font-size: 2.5em;
+    font-size: 18px;
+  }
+
+  .right-corner-flag__text {
+    font-size: 20px;
+    right: 10px;
+    top: 15px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+  .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
+    height: 60px;
+    width: 10px;
+  }
+  .modal-window__modal-content {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .tour-item__title {
+    font-size: 20px;
+  }
+
+  .category-widget .category-list__link {
+    font-size: 8px;
+  }
+
+  .contact-us-stroke__text {
+    font-size: 24px;
+  }
+  .contact-us-stroke__number {
+    font-size: 30px;
   }
 
   .footer {
-    font-size: 2em;
-    line-height: 2.5em;
+    font-size: 16px;
+    line-height: 32px;
   }
+  .footer-item__telephone {
+    font-size: 40px;
+  }
+  .social-bar__link {
 
+  }
+  .footer-list_footer-button {
+
+  }
+  .footer-item__social-bar .social-bar__link {
+    font-size: 40px;
+  }
 
 
 }
