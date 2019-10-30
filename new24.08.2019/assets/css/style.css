@@ -71,8 +71,8 @@
 .navigation-menu__menu-toggle {
   display: none;
   position: relative;
-  width: 10em;
-  height: 4em;
+  width: 60px;
+  height: 60px;
   float:left;
   cursor: pointer;
   margin: 3% 3% 0;
@@ -85,8 +85,8 @@
 }
 .menu-toggle__icon {
   position: absolute;
-  width: 4em;
-  height: 4em;
+  width: 50px;
+  height: 50px;
 }
 
 .menu-items__close-button {
@@ -96,10 +96,10 @@
 }
 .close-button {
   position: absolute;
-  right: 2em;
-  top: 2em;
-  width: 2em;
-  height: 2em;
+  right: 30px;
+  top: 30px;
+  width: 50px;
+  height: 50px;
   opacity: 0.5;
 }
 .close-button:hover {
@@ -109,8 +109,8 @@
   position: absolute;
   left: 1em;
   content: ' ';
-  height: 2em;
-  width: 0.2em;
+  height: 75px;
+  width: 10px;
   background-color: white;
 }
 .close-button:before {
@@ -365,6 +365,7 @@
   left: 0;
   text-align: left;
   z-index: 6;
+  overflow: auto;
 }
 .modal-window__modal-title {
   padding: 3%;
@@ -747,8 +748,8 @@
     display: inline-block;
   }
   .close-button:before, .close-button:after {
-    height: 4em;
-    width: 0.4em;
+    height: 75px;
+    width: 8px;
   }
   .item-list__link {
     color: white;
@@ -764,7 +765,7 @@
   .navigation-menu__telephone-widget {
     position: relative;
     float: right;
-    margin: 5% 3% 0 0;
+    margin: 2% 3% 0 0;
   }
   .telephone-widget__link {
     font-size: 24px;
@@ -775,9 +776,7 @@
     height: 48px;
   }
 
-  .manager-button {
-    bottom: 9%;
-  }
+
   .manager-modal-window__social-bar {
     font-size: 32px;
   }
@@ -805,7 +804,7 @@
     height: 77vw;
   }
   .tour-item__title{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .right-corner-flag__text {
@@ -828,7 +827,9 @@
   }
   .modal-content__content {
     width: 100%;
-    padding-bottom: 5%;
+    padding-bottom: 5%;\
+    font-size: 16px;
+    line-height: 24px;
   }
   .modal-content__timing {
     width: 100%;
@@ -931,7 +932,7 @@
   }
   .modal-window__click-close-modal.close-button:before, .modal-window__click-close-modal.close-button:after {
     height: 60px;
-    width: 10px;
+    width: 6px;
   }
   .modal-window__modal-content {
     font-size: 14px;
@@ -939,7 +940,7 @@
   }
 
   .tour-item__title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .category-widget .category-list__link {
