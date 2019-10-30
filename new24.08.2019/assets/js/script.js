@@ -13,10 +13,10 @@ $(document).ready(function() {
    //Открытие/закрытие окна менеджера
 
    $('.manager-button__button').on('click', function(){
-     $('.manager-button__manager-modal-window').show();
+     $('.manager-button__manager-modal-window').removeClass('hidden');
     });
    $('.modal-window-close__button').on('click', function(){
-     $('.manager-button__manager-modal-window').hide();
+     $('.manager-button__manager-modal-window').addClass('hidden');
     });
 
   //Переключатель категории экскурсий
