@@ -57,7 +57,6 @@
   background-size: contain;
 }
 .navigation-menu__menu-items {
-  display: flex;
   align-items: center;
   margin: 0px 20px;
   width: 100%;
